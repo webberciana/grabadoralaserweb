@@ -1,5 +1,5 @@
 import rss from '@astrojs/rss';
-import data from '../../data';
+import data from '../data';
 
 export async function GET(context) {
   const now = new Date();
