@@ -2,21 +2,23 @@
 import Layout from '../../../layouts/Layout.astro';
 import BlogCard from '../../../components/BlogCard.astro';
 import TagCloud from '../../../components/TagCloud.astro';
-import data from '../../../data';
+import data from '../../../data/blog.json';
 
 export async function getStaticPaths() {
   const now = new Date();
-  // Solo obtener tags de artículos publicados
-  const publishedArticles = data.articles.filter(
+  // Get published articles
+  const publishedArticles = (data.articles || []).filter(
     article => new Date(article.publishDate) <= now
   );
-  const allTags = [...new Set(publishedArticles.flatMap((article) => article.tags))];
+  
+  // Get unique tags from published articles
+  const allTags = [...new Set(publishedArticles.flatMap((article) => article.tags || []))];
   
   return allTags.map((tag) => ({
     params: { tag },
     props: {
       tag,
-      tagInfo: data.tags.find(t => t.slug === tag) || {
+      tagInfo: (data.tags || []).find(t => t.slug === tag) || {
         name: tag.charAt(0).toUpperCase() + tag.slice(1),
         description: `Articles related to ${tag} in laser engraving and cutting`
       }
@@ -28,19 +30,19 @@ const { tag, tagInfo } = Astro.props;
 
 // Filter articles by tag and publication date
 const now = new Date();
-const articles = data.articles
+const articles = (data.articles || [])
   .filter(
     (article) =>
-      article.tags.includes(tag) &&
+      article.tags?.includes(tag) &&
       new Date(article.publishDate) <= now
   )
   .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
 
-// Get all unique tags from published articles only
+// Get all unique tags from published articles
 const allTags = [...new Set(
-  data.articles
+  (data.articles || [])
     .filter(article => new Date(article.publishDate) <= now)
-    .flatMap(article => article.tags)
+    .flatMap(article => article.tags || [])
 )];
 ---
 
@@ -63,13 +65,13 @@ const allTags = [...new Set(
       <div class="lg:col-span-3">
         <div class="grid gap-8 md:grid-cols-2">
           {articles.map((article) => {
-            const author = data.authors.find(a => a.id === article.author);
+            const author = (data.authors || []).find(a => a.id === article.author);
             return (
               <BlogCard
                 {...article}
                 author={{
-                  name: author?.name || '',
-                  avatar: author?.avatar || ''
+                  name: author?.name || 'Unknown Author',
+                  avatar: author?.avatar || '/images/default-avatar.jpg'
                 }}
               />
             );
