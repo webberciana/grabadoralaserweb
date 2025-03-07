@@ -1,13 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import AuthorCard from '../../components/AuthorCard.astro';
-import data from '../../data';
+import data from '../../data/blog.json';
 
 // Get article count for each author
 const now = new Date();
-const authorArticleCounts = data.authors.map(author => ({
+const authors = data.authors || [];
+const authorArticleCounts = authors.map(author => ({
   ...author,
-  articleCount: data.articles.filter(
+  articleCount: (data.articles || []).filter(
     article =>
       article.author === author.id &&
       new Date(article.publishDate) <= now
