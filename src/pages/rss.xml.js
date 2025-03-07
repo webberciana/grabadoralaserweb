@@ -1,9 +1,9 @@
 import rss from '@astrojs/rss';
-import data from '../data';
+import data from '../data/blog.json';
 
 export async function GET(context) {
   const now = new Date();
-  const publishedArticles = data.articles
+  const publishedArticles = (data.articles || [])
     .filter((article) => new Date(article.publishDate) <= now)
     .sort(
       (a, b) =>
@@ -11,8 +11,8 @@ export async function GET(context) {
     );
 
   return rss({
-    title: data.site.title,
-    description: data.site.description,
+    title: "Mi Grabadora Láser",
+    description: "Expert reviews and guides for laser engravers and cutters",
     site: context.site,
     items: publishedArticles.map((article) => ({
       title: article.title,
