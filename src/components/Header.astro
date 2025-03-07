@@ -1,0 +1,106 @@
+---
+import { Image } from 'astro:assets';
+import data from '../data/data.json';
+
+const categories = data.categories;
+---
+
+<header class="bg-white sticky top-0 z-50 shadow-soft">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <div class="flex items-center">
+        <a 
+          href="/" 
+          class="text-2xl font-bold text-gray-900 hover:text-primary-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg"
+        >
+          {data.site.title}
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex md:items-center md:space-x-8">
+        {categories.map((category) => (
+          <a
+            href={`/categories/${category.slug}`}
+            class="text-base font-medium text-gray-600 hover:text-primary-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg"
+          >
+            {category.title}
+          </a>
+        ))}
+        <a
+          href="/brands"
+          class="text-base font-medium text-gray-600 hover:text-primary-600 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg"
+        >
+          Marcas
+        </a>
+        <a
+          href="/blog"
+          class="text-base font-medium text-white bg-primary-600 px-5 py-2.5 rounded-full hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors"
+        >
+          Blog
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        type="button"
+        class="md:hidden inline-flex items-center justify-center p-2.5 text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition-colors rounded-full focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open menu</span>
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="space-y-2 py-3">
+        {categories.map((category) => (
+          <a
+            href={`/categories/${category.slug}`}
+            class="block px-4 py-2.5 text-base font-medium text-gray-600 hover:text-primary-600 hover:bg-gray-50 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+          >
+            {category.title}
+          </a>
+        ))}
+        <a
+          href="/brands"
+          class="block px-4 py-2.5 text-base font-medium text-gray-600 hover:text-primary-600 hover:bg-gray-50 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+        >
+          Marcas
+        </a>
+        <a
+          href="/blog"
+          class="block px-4 py-2.5 text-base font-medium text-primary-600 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+        >
+          Blog
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+    mobileMenuButton.setAttribute('aria-expanded', (!isExpanded).toString());
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>

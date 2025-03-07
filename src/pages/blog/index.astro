@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import TagCloud from '../../components/TagCloud.astro';
+import data from '../../data';
+import { getPublishedArticles, getAuthorById } from '../../utils/dataProcessing';
+
+// Get published articles
+const publishedArticles = getPublishedArticles();
+
+// Process articles with author data
+const articlesWithAuthors = publishedArticles.map(article => {
+  const author = getAuthorById(article.author);
+  return {
+    ...article,
+    author: author ? {
+      name: author.name,
+      avatar: author.avatar
+    } : {
+      name: 'Unknown Author',
+      avatar: '/images/default-avatar.jpg'
+    }
+  };
+});
+
+// Get all unique tags from published articles
+const allTags = [...new Set(publishedArticles.flatMap(article => article.tags))];
+---
+
+<Layout
+  title="Blog"
+  description="Latest articles and guides about laser engraving and cutting"
+>
+  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <!-- Blog Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Latest Articles</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Stay up to date with the latest trends, tips, and tutorials in laser engraving
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <!-- Main Content -->
+      <div class="lg:col-span-3">
+        <div class="grid gap-8 md:grid-cols-2">
+          {articlesWithAuthors.map((article) => (
+            <BlogCard {...article} />
+          ))}
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-1">
+        <div class="bg-white rounded-2xl shadow-lg p-6 sticky top-24">
+          <h2 class="text-xl font-bold text-gray-900 mb-4">Popular Tags</h2>
+          <TagCloud tags={allTags} />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

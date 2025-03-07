@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CategoryCard from '../../components/CategoryCard.astro';
+import data from '../../data';
+
+const categories = data.categories;
+---
+
+<Layout
+  title="Laser Engraver Categories"
+  description="Explore our comprehensive collection of laser engraver categories, from hobby to professional grade machines"
+>
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Laser Engraver Categories</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Find the perfect laser engraver for your needs. Browse our carefully curated categories of laser engravers and cutters.
+      </p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {categories.map((category) => (
+        <CategoryCard {...category} />
+      ))}
+    </div>
+
+    <div class="mt-16 bg-white rounded-2xl p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">How to Choose the Right Laser Engraver</h2>
+      <div class="prose max-w-none text-gray-600">
+        <p>
+          Selecting the perfect laser engraver depends on various factors including your intended use,
+          budget, and required features. Here are some key considerations:
+        </p>
+        <ul>
+          <li>Determine your primary use (hobby, business, industrial)</li>
+          <li>Consider the materials you'll be working with</li>
+          <li>Evaluate the work area size you need</li>
+          <li>Check the laser power requirements</li>
+          <li>Review safety features and certifications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>

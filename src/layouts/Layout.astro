@@ -1,0 +1,29 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SEO from '../components/SEO.astro';
+
+const { title, description, noindex, nofollow } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <SEO {title} {description} {noindex} {nofollow} />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-50 antialiased selection:bg-primary-100 selection:text-primary-900">
+    <Header />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', system-ui, sans-serif; }
+  }
+</style>

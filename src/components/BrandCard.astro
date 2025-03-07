@@ -1,0 +1,39 @@
+---
+interface Props {
+  name: string;
+  slug: string;
+  logo: string;
+  description: string;
+  productCount?: number;
+}
+
+const { name, slug, logo, description, productCount } = Astro.props;
+---
+
+<article class="group bg-white rounded-2xl p-8 shadow-card hover:shadow-hover transition-all duration-300">
+  <a 
+    href={`/brands/${slug}`}
+    class="block focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg"
+  >
+    <header class="flex flex-col items-center mb-6">
+      <figure class="w-32 h-32 mb-4 rounded-xl overflow-hidden bg-gray-50 p-4">
+        <img
+          src={logo}
+          alt={`${name} logo`}
+          class="w-full h-full object-contain"
+        />
+      </figure>
+      <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
+        {name}
+      </h2>
+    </header>
+
+    <p class="text-base text-gray-600 mb-4 text-center">{description}</p>
+
+    {productCount !== undefined && (
+      <footer class="text-sm text-primary-600 text-center">
+        {productCount} {productCount === 1 ? 'producto' : 'productos'}
+      </footer>
+    )}
+  </a>
+</article>

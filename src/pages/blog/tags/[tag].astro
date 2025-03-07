@@ -1,0 +1,89 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogCard from '../../../components/BlogCard.astro';
+import TagCloud from '../../../components/TagCloud.astro';
+import data from '../../data';
+
+export async function getStaticPaths() {
+  const now = new Date();
+  // Solo obtener tags de artículos publicados
+  const publishedArticles = data.articles.filter(
+    article => new Date(article.publishDate) <= now
+  );
+  const allTags = [...new Set(publishedArticles.flatMap((article) => article.tags))];
+  
+  return allTags.map((tag) => ({
+    params: { tag },
+    props: {
+      tag,
+      tagInfo: data.tags.find(t => t.slug === tag) || {
+        name: tag.charAt(0).toUpperCase() + tag.slice(1),
+        description: `Articles related to ${tag} in laser engraving and cutting`
+      }
+    }
+  }));
+}
+
+const { tag, tagInfo } = Astro.props;
+
+// Filter articles by tag and publication date
+const now = new Date();
+const articles = data.articles
+  .filter(
+    (article) =>
+      article.tags.includes(tag) &&
+      new Date(article.publishDate) <= now
+  )
+  .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
+
+// Get all unique tags from published articles only
+const allTags = [...new Set(
+  data.articles
+    .filter(article => new Date(article.publishDate) <= now)
+    .flatMap(article => article.tags)
+)];
+---
+
+<Layout
+  title={`${tagInfo.name} Articles`}
+  description={tagInfo.description}
+>
+  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">
+        Articles tagged with #{tagInfo.name}
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        {tagInfo.description}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <!-- Main Content -->
+      <div class="lg:col-span-3">
+        <div class="grid gap-8 md:grid-cols-2">
+          {articles.map((article) => {
+            const author = data.authors.find(a => a.id === article.author);
+            return (
+              <BlogCard
+                {...article}
+                author={{
+                  name: author?.name || '',
+                  avatar: author?.avatar || ''
+                }}
+              />
+            );
+          })}
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-1">
+        <div class="bg-white rounded-2xl shadow-lg p-6 sticky top-24">
+          <h2 class="text-xl font-bold text-gray-900 mb-4">Browse Tags</h2>
+          <TagCloud tags={allTags} />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

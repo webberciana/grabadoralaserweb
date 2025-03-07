@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalHeader from '../components/LegalHeader.astro';
+import PageSEO from '../components/PageSEO.astro';
+---
+
+<Layout>
+  <PageSEO
+    title="Política de Privacidad"
+    description="Información sobre cómo protegemos y tratamos tus datos personales"
+    noindex={true}
+  />
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <LegalHeader
+      title="Política de Privacidad"
+      description="Información sobre cómo protegemos y tratamos tus datos personales"
+    />
+
+    <div class="prose prose-lg max-w-none bg-white rounded-2xl p-8 shadow-sm">
+      <h2>1. Responsable del Tratamiento</h2>
+      <p>
+        Laser Engraver Guide es el responsable del tratamiento de los datos personales del Usuario.
+      </p>
+
+      <h2>2. Finalidad del Tratamiento</h2>
+      <p>
+        Los datos personales se recogerán y tratarán para las siguientes finalidades:
+      </p>
+      <ul>
+        <li>Gestionar el envío de información solicitada</li>
+        <li>Enviar comunicaciones comerciales</li>
+        <li>Responder a consultas y solicitudes</li>
+        <li>Mejorar la experiencia del usuario</li>
+      </ul>
+
+      <h2>3. Legitimación</h2>
+      <p>
+        El tratamiento de los datos se realiza con las siguientes bases jurídicas:
+      </p>
+      <ul>
+        <li>Consentimiento del interesado</li>
+        <li>Ejecución de un contrato</li>
+        <li>Interés legítimo del responsable</li>
+      </ul>
+
+      <h2>4. Derechos</h2>
+      <p>
+        El Usuario puede ejercer los siguientes derechos:
+      </p>
+      <ul>
+        <li>Acceso a sus datos personales</li>
+        <li>Rectificación de los datos inexactos</li>
+        <li>Supresión de los datos</li>
+        <li>Oposición al tratamiento</li>
+        <li>Limitación del tratamiento</li>
+        <li>Portabilidad de los datos</li>
+      </ul>
+    </div>
+  </div>
+</Layout>

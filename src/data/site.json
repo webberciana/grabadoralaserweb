@@ -1,0 +1,16 @@
+{
+  "title": "Laser Engraver Guide",
+  "description": "Expert reviews and guides for laser engravers and cutters",
+  "baseUrl": "https://laserengraverguide.com",
+  "social": {
+    "twitter": "laserengraverguide",
+    "facebook": "laserengraverguide",
+    "instagram": "laserengraverguide",
+    "youtube": "laserengraverguide"
+  },
+  "contact": {
+    "email": "info@laserengraverguide.com",
+    "phone": "+34 900 000 000",
+    "address": "Calle Principal 123, 28001 Madrid"
+  }
+}

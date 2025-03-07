@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalHeader from '../components/LegalHeader.astro';
+import PageSEO from '../components/PageSEO.astro';
+---
+
+<Layout>
+  <PageSEO
+    title="Política de Cookies"
+    description="Información sobre el uso de cookies en nuestro sitio web"
+    noindex={true}
+  />
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <LegalHeader
+      title="Política de Cookies"
+      description="Información sobre el uso de cookies en nuestro sitio web"
+    />
+
+    <div class="prose prose-lg max-w-none bg-white rounded-2xl p-8 shadow-sm">
+      <h2>1. ¿Qué son las cookies?</h2>
+      <p>
+        Las cookies son pequeños archivos de texto que los sitios web almacenan en su dispositivo cuando los visita.
+      </p>
+
+      <h2>2. Tipos de cookies que utilizamos</h2>
+      <h3>Cookies técnicas</h3>
+      <p>
+        Son aquellas que permiten al usuario la navegación a través de la página web y la utilización de las diferentes opciones o servicios que en ella existen.
+      </p>
+
+      <h3>Cookies analíticas</h3>
+      <p>
+        Permiten analizar el comportamiento de los usuarios de forma anónima para mejorar los servicios ofrecidos.
+      </p>
+
+      <h3>Cookies de personalización</h3>
+      <p>
+        Permiten al usuario acceder al servicio con algunas características predefinidas en función de una serie de criterios.
+      </p>
+
+      <h2>3. Cómo gestionar las cookies</h2>
+      <p>
+        Puede permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones de su navegador de internet.
+      </p>
+
+      <h2>4. Actualizaciones y cambios</h2>
+      <p>
+        Podemos actualizar esta Política de Cookies en cualquier momento. Le recomendamos que revise esta política cada vez que acceda a nuestro sitio web.
+      </p>
+    </div>
+  </div>
+</Layout>

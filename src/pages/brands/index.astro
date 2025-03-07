@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BrandCard from '../../components/BrandCard.astro';
+import data from '../../data';
+
+// Get product count for each brand
+const now = new Date();
+const brandsWithProductCount = data.brands.map(brand => ({
+  ...brand,
+  productCount: data.products.filter(
+    product => 
+      product.brand === brand.id &&
+      new Date(product.publishDate) <= now
+  ).length
+}));
+---
+
+<Layout
+  title="Marcas de Grabadores Láser"
+  description="Descubre las mejores marcas de grabadores láser y sus productos"
+>
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <header class="text-center mb-16">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Marcas de Grabadores Láser</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Explora nuestra selección de las mejores marcas de grabadores láser, cada una con sus características únicas y especializaciones.
+      </p>
+    </header>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {brandsWithProductCount.map((brand) => (
+        <BrandCard {...brand} />
+      ))}
+    </div>
+
+    <section class="mt-16 bg-white rounded-2xl p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Cómo elegir una marca de grabador láser</h2>
+      <div class="prose max-w-none text-gray-600">
+        <p>
+          La elección de una marca de grabador láser es una decisión importante que puede afectar significativamente
+          tu experiencia y resultados. Aquí hay algunos factores clave a considerar:
+        </p>
+        <ul>
+          <li>Reputación y trayectoria de la marca</li>
+          <li>Calidad de construcción y materiales</li>
+          <li>Servicio post-venta y soporte técnico</li>
+          <li>Disponibilidad de repuestos y accesorios</li>
+          <li>Relación calidad-precio</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</Layout>

@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import data from '../../data';
+
+export async function getStaticPaths() {
+  return data.authors.map((author) => ({
+    params: { slug: author.slug },
+    props: { author },
+  }));
+}
+
+const { author } = Astro.props;
+
+// Filter articles by author and publication date
+const now = new Date();
+const articles = data.articles
+  .filter(
+    (article) =>
+      article.author === author.id &&
+      new Date(article.publishDate) <= now
+  )
+  .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
+---
+
+<Layout
+  title={`Articles by ${author.name}`}
+  description={`Read articles about laser engraving and cutting written by ${author.name}`}
+>
+  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <!-- Author Header -->
+    <div class="text-center mb-12">
+      <img
+        src={author.avatar}
+        alt={author.name}
+        class="w-24 h-24 rounded-full mx-auto mb-6 object-cover"
+      />
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">{author.name}</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">{author.bio}</p>
+    </div>
+
+    <!-- Author's Articles -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {articles.map((article) => (
+        <BlogCard
+          {...article}
+          author={{
+            name: author.name,
+            avatar: author.avatar
+          }}
+        />
+      ))}
+    </div>
+  </div>
+</Layout>

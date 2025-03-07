@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalHeader from '../components/LegalHeader.astro';
+import PageSEO from '../components/PageSEO.astro';
+---
+
+<Layout>
+  <PageSEO
+    title="Aviso Legal"
+    description="Información legal sobre nuestro sitio web y servicios"
+    noindex={true}
+  />
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <LegalHeader
+      title="Aviso Legal"
+      description="Información legal sobre nuestro sitio web y servicios"
+    />
+
+    <div class="prose prose-lg max-w-none bg-white rounded-2xl p-8 shadow-sm">
+      <h2>1. Información del Titular</h2>
+      <p>
+        En cumplimiento de la Ley 34/2002, de Servicios de la Sociedad de la Información y Comercio Electrónico, le informamos que:
+      </p>
+      <ul>
+        <li>Denominación social: Laser Engraver Guide</li>
+        <li>Domicilio social: [Dirección]</li>
+        <li>NIF/CIF: [Número fiscal]</li>
+        <li>Email: info@laserengraverguide.com</li>
+      </ul>
+
+      <h2>2. Objeto</h2>
+      <p>
+        El presente aviso legal regula el uso del sitio web laserengraverguide.com, del que es titular Laser Engraver Guide.
+      </p>
+
+      <h2>3. Propiedad Intelectual</h2>
+      <p>
+        Todos los derechos de propiedad intelectual del contenido de esta página web son propiedad de Laser Engraver Guide.
+      </p>
+
+      <h2>4. Responsabilidad</h2>
+      <p>
+        Laser Engraver Guide no se hace responsable de los daños y perjuicios que se pudieran derivar del uso de la información contenida en este sitio web.
+      </p>
+
+      <h2>5. Enlaces</h2>
+      <p>
+        En el caso de que en laserengraverguide.com se dispusiesen enlaces o hipervínculos hacía otros sitios de Internet, no ejerceremos ningún tipo de control sobre dichos sitios y contenidos.
+      </p>
+
+      <h2>6. Modificaciones</h2>
+      <p>
+        Nos reservamos el derecho a modificar el presente aviso legal en cualquier momento.
+      </p>
+    </div>
+  </div>
+</Layout>

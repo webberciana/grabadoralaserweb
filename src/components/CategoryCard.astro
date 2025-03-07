@@ -1,0 +1,37 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  description: string;
+}
+
+const { title, slug, description } = Astro.props;
+---
+
+<article class="group bg-white rounded-2xl p-8 shadow-card hover:shadow-hover transition-all duration-300">
+  <a 
+    href={`/categories/${slug}`}
+    class="block focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg"
+  >
+    <header>
+      <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-3">
+        {title}
+      </h2>
+    </header>
+
+    <p class="text-base text-gray-600 mb-4">{description}</p>
+
+    <footer class="flex items-center text-primary-600 group-hover:text-primary-700 font-semibold">
+      <span class="text-sm">Explore Category</span>
+      <svg 
+        class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      </svg>
+    </footer>
+  </a>
+</article>

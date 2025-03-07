@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LegalHeader from '../components/LegalHeader.astro';
+import PageSEO from '../components/PageSEO.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Laser Engraver Guide",
+  "description": "Expertos en grabado láser comprometidos con tu éxito. Ofrecemos reviews, guías y consejos sobre grabadores láser.",
+  "url": "https://laserengraverguide.com",
+  "logo": "https://laserengraverguide.com/logo.png",
+  "sameAs": [
+    "https://twitter.com/laserengraverguide",
+    "https://facebook.com/laserengraverguide",
+    "https://instagram.com/laserengraverguide"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "",
+    "contactType": "customer service",
+    "email": "info@laserengraverguide.com",
+    "availableLanguage": ["Spanish"]
+  }
+};
+---
+
+<Layout>
+  <PageSEO
+    title="Sobre Nosotros - Expertos en Grabado Láser"
+    description="Descubre quiénes somos y nuestra misión de ayudarte a encontrar el grabador láser perfecto. Expertos en reviews, guías y consejos sobre grabado láser."
+    noindex={false}
+  />
+  
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <LegalHeader
+      title="Sobre Nosotros"
+      description="Expertos en grabado láser comprometidos con tu éxito"
+    />
+
+    <div class="prose prose-lg max-w-none">
+      <div class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+        <h2>Nuestra Misión</h2>
+        <p>
+          En Laser Engraver Guide, nos dedicamos a proporcionar información detallada y objetiva sobre grabadores láser, ayudando a nuestros lectores a tomar decisiones informadas en sus compras.
+        </p>
+
+        <h2>Nuestro Compromiso</h2>
+        <p>
+          Nos comprometemos a ofrecer:
+        </p>
+        <ul>
+          <li>Reviews imparciales y detallados</li>
+          <li>Guías prácticas y tutoriales</li>
+          <li>Comparativas exhaustivas</li>
+          <li>Consejos de expertos</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+        <h2>Nuestro Equipo</h2>
+        <p>
+          Contamos con un equipo de expertos en grabado láser con años de experiencia en el sector. Cada miembro aporta su conocimiento especializado para ofrecerte la mejor información posible.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-sm">
+        <h2>Metodología</h2>
+        <p>
+          Nuestras reviews y análisis se basan en:
+        </p>
+        <ul>
+          <li>Pruebas prácticas exhaustivas</li>
+          <li>Análisis técnico detallado</li>
+          <li>Evaluación de la relación calidad-precio</li>
+          <li>Feedback de usuarios reales</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>

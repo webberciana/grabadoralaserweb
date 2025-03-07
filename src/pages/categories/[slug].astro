@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import data from '../../data';
+import categories from '../../data/categories.json';
+import { getProductsByCategory, isProductPublished } from '../../utils/productHelpers';
+
+export async function getStaticPaths() {
+  // Get all unique categories that have published products
+  const publishedCategories = categories.categories.filter(category =>
+    data.products.some(product => 
+      product.categories.includes(category.id) && 
+      isProductPublished(product)
+    )
+  );
+  
+  return publishedCategories.map((category) => ({
+    params: { slug: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+
+// Filter products by category and publication date
+const products = data.products
+  .filter(product => 
+    product.categories.includes(category.id) && 
+    isProductPublished(product)
+  )
+  .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
+---
+
+<Layout
+  title={category.title}
+  description={category.description}
+>
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <!-- Category Header -->
+    <header class="text-center mb-16">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">{category.title}</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+        {category.description}
+      </p>
+      
+      {category.features && (
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mt-8">
+          {category.features.map((feature) => (
+            <div class="bg-white rounded-xl p-4 shadow-sm">
+              <p class="text-gray-800">{feature}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </header>
+
+
+    <!-- Products Grid -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {products.map((product) => (
+        <ProductCard {...product} />
+      ))}
+    </div>
+
+
+    <section class="mt-16 bg-white rounded-2xl p-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">
+        {category.title} información adicional
+      </h2>
+      <div class="prose max-w-none text-gray-600">
+        <p>
+          {category.secondaryDescription}
+        </p>
+      </div>
+    </section>
+
+    <!-- Two Column Section -->
+    {category.twoColumnSection && (
+      <section class="bg-white rounded-2xl p-8 mb-16">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">{category.twoColumnSection.title}</h2>
+            <div class="prose max-w-none text-gray-600">
+              {category.twoColumnSection.content}
+            </div>
+          </div>
+          <figure class="aspect-w-16 aspect-h-9 bg-gray-50 rounded-xl overflow-hidden">
+            <img
+              src={category.twoColumnSection.image}
+              alt={category.twoColumnSection.imageAlt}
+              class="w-full h-full object-cover"
+            />
+          </figure>
+        </div>
+      </section>
+    )}
+
+
+    <!-- Category Information -->
+    <section class="mt-16 bg-white rounded-2xl p-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">
+        Guía de Compra: {category.title}
+      </h2>
+      <div class="prose max-w-none text-gray-600">
+        <p>
+          Al elegir un grabador láser {category.title.toLowerCase()}, considera estos aspectos importantes:
+        </p>
+        <ul>
+          <li>Potencia del láser y área de trabajo</li>
+          <li>Compatibilidad con los materiales que deseas trabajar</li>
+          <li>Características de seguridad incluidas</li>
+          <li>Software compatible y facilidad de uso</li>
+          <li>Soporte técnico y garantía</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-2xl p-8 mb-16">
+        <div class="mt-8 space-y-4">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Preguntas frecuentes sobre {category.title.toLowerCase()}</h3>
+          {category.faqs.map((faq, index) => (
+            <details class="group bg-gray-50 rounded-xl" {...index === 0 && { open: true }}>
+              <summary class="flex justify-between items-center cursor-pointer p-6">
+                <h4 class="text-lg font-medium text-gray-900">{faq.question}</h4>
+                <span class="ml-6 flex-shrink-0">
+                  <svg
+                    class="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="px-6 pb-6">
+                <p class="text-gray-600">{faq.answer}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+    </section>
+    
+  </div>
+</Layout>

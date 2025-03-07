@@ -1,0 +1,1429 @@
+{
+  "brands": [
+    {
+      "id": "ortur",
+      "name": "Ortur",
+      "slug": "ortur",
+      "logo": "/imagenes/ortur-logo.jpg",
+      "publishDate": "2024-01-04",
+      "description": "Ortur es una marca líder en grabadores láser, conocida por su innovación y calidad.",
+      "alternativeDescription": "Ortur combina innovación, calidad y seguridad en sus grabadores láser, ofreciendo soluciones tanto para profesionales como aficionados.",
+      "longDescription": "Ortur se ha establecido como uno de los fabricantes más respetados en la industria de grabadores láser. Con un fuerte enfoque en la innovación y la seguridad, Ortur ofrece una amplia gama de máquinas que satisfacen las necesidades tanto de principiantes como de profesionales.",
+      "contentBrand": "Merece la pena confiar en Ortur por su compromiso con la calidad, la innovación y la seguridad. Sus productos destacan por ser fáciles de usar, incluso para quienes no tienen experiencia previa, mientras que los usuarios avanzados valoran las características técnicas avanzadas y la compatibilidad con diversos softwares. Además, la marca ofrece un soporte técnico excepcional, lo que asegura que siempre tendrás ayuda cuando la necesites. Con un enfoque en la seguridad, Ortur utiliza materiales de alta calidad y tecnología de protección láser en todos sus dispositivos, lo que la convierte en una opción confiable y eficiente en el mercado de los grabadores láser.",
+      "features": [
+        "Tecnología de última generación",
+        "Excelente relación calidad-precio",
+        "Enfoque en la seguridad",
+        "Soporte técnico dedicado"
+      ],
+      "website": "https://ortur.net/",
+      "brandReviews": {
+        "summary": "Ortur recibe constantemente elogios por su calidad y diseño innovador. Los usuarios destacan la facilidad de uso y el excelente soporte técnico.",
+        "reviews": [
+          {
+            "name": "Juan Pérez",
+            "rating": 5,
+            "content": "Excelente producto, fácil de usar y con resultados precisos."
+          },
+          {
+            "name": "Ana López",
+            "rating": 4,
+            "content": "Muy buena relación calidad-precio. El soporte técnico es rápido y eficiente."
+          },
+          {
+            "name": "Carlos García",
+            "rating": 3,
+            "content": "Los resultados son buenos, pero requiere ajustes iniciales."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "Por qué elegir Ortur",
+        "content": "Con un enfoque constante en la innovación y la seguridad, Ortur es una marca confiable que ofrece productos de calidad. Sus grabadores láser son ideales para profesionales y aficionados, con diseños intuitivos y características avanzadas.",
+        "image": "/imagenes/ortur-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser Ortur en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Es compatible con software como LightBurn?",
+          "answer": "Sí, es compatible con LightBurn y LaserGRBL."
+        },
+        {
+          "question": "¿Se puede usar sin conexión?",
+          "answer": "Sí, incluye una pantalla táctil que permite importar archivos y trabajar sin conexión."
+        }
+      ]
+    },
+    {
+      "id": "wainlux",
+      "name": "Wainlux",
+      "slug": "wainlux",
+      "logo": "/imagenes/wainlux-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Wainlux es una marca líder en grabadores láser, reconocida por su innovación, eficiencia y facilidad de uso.",
+      "alternativeDescription": "Wainlux ofrece soluciones de grabado láser eficientes y accesibles, ideales tanto para aficionados como para profesionales.",
+      "longDescription": "Wainlux es una empresa con más de 10 años de experiencia en la fabricación de máquinas de grabado láser, proporcionando productos de alta calidad para diversas aplicaciones como bricolaje, publicidad, educación y pequeñas empresas. Su compromiso con la innovación y la atención al cliente ha consolidado su reputación como un líder confiable en el mercado.",
+      "contentBrand": "Wainlux se destaca por su dedicación a la innovación y la accesibilidad. Sus productos están diseñados para ser fáciles de usar y altamente eficientes, lo que los hace ideales para una amplia gama de aplicaciones. Además, la empresa ofrece un sólido servicio de atención al cliente, asegurando una experiencia satisfactoria para todos los usuarios.",
+      "features": [
+        "Alta eficiencia y precisión en el grabado",
+        "Facilidad de uso para principiantes",
+        "Compatibilidad con múltiples materiales",
+        "Atención al cliente de calidad"
+      ],
+      "website": "https://www.wainlux.com/",
+      "brandReviews": {
+        "summary": "Los productos de Wainlux son altamente valorados por su facilidad de uso, precisión y excelente servicio de atención al cliente.",
+        "reviews": [
+          {
+            "name": "José Martínez",
+            "rating": 5,
+            "content": "Excelente producto para empezar en el grabado láser. La instalación es sencilla y los resultados son precisos."
+          },
+          {
+            "name": "Laura Fernández",
+            "rating": 4,
+            "content": "Buena relación calidad-precio. Ideal para pequeños proyectos de bricolaje."
+          },
+          {
+            "name": "Carlos Rivas",
+            "rating": 3,
+            "content": "Funciona bien, pero la zona de grabado es algo limitada para proyectos más grandes."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Wainlux?",
+        "content": "Wainlux ofrece una combinación perfecta de innovación y practicidad, con productos diseñados para proporcionar resultados precisos y profesionales. Su enfoque en la facilidad de uso y el servicio al cliente la convierten en una opción ideal para cualquier nivel de usuario.",
+        "image": "/imagenes/wainlux-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser Wainlux en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Es compatible con software como LightBurn?",
+          "answer": "Sí, Wainlux es compatible con software como LightBurn y LaserGRBL."
+        },
+        {
+          "question": "¿Puedo grabar en vidrio y metal?",
+          "answer": "Sí, pero para grabar en vidrio y metal se recomienda utilizar recubrimientos especiales o técnicas específicas."
+        },
+        {
+          "question": "¿El grabador láser se puede utilizar sin conexión?",
+          "answer": "Sí, Wainlux permite la importación de archivos para trabajar sin conexión mediante su conexión USB o WiFi."
+        }
+      ]
+    },
+    {
+      "id": "vevor",
+      "name": "Vevor",
+      "slug": "vevor",
+      "logo": "/imagenes/vevor-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Vevor es una marca global especializada en productos de decoración del hogar y herramientas asequibles y confiables.",
+      "alternativeDescription": "Vevor ofrece productos de decoración del hogar y herramientas de calidad a precios accesibles, garantizando fiabilidad y soporte continuo.",
+      "longDescription": "Desde su fundación en 2007, Vevor se ha convertido en una marca líder en el sector de la decoración del hogar, ofreciendo una amplia gama de productos que incluyen herramientas, equipos para exteriores, artículos para automóviles y más. Con presencia en más de 190 países y más de 10 millones de clientes, Vevor se compromete a proporcionar productos asequibles y confiables, garantizando la mejor experiencia de compra con entregas rápidas, garantías extendidas y un soporte al cliente disponible 24/7.",
+      "contentBrand": "Vevor es sinónimo de calidad y asequibilidad. Gracias a su estrecha colaboración con las principales fábricas y su compromiso con la innovación, Vevor ofrece productos confiables que satisfacen tanto a profesionales como a entusiastas del bricolaje. Su enfoque en la satisfacción del cliente y el valor excepcional han permitido que millones de usuarios confíen en la marca para sus proyectos de decoración del hogar y más.",
+      "features": [
+        "Productos asequibles y confiables",
+        "Entrega rápida en 2-5 días",
+        "Garantía de un año",
+        "Servicio de atención al cliente 24/7"
+      ],
+      "website": "https://www.vevor.es/",
+      "brandReviews": {
+        "summary": "Los productos de Vevor son altamente valorados por su relación calidad-precio, facilidad de uso y excelente servicio postventa.",
+        "reviews": [
+          {
+            "name": "Ricardo Pérez",
+            "rating": 5,
+            "content": "Excelente calidad y fácil de usar. El servicio al cliente es muy responsable y resolvió mis dudas rápidamente."
+          },
+          {
+            "name": "María Gómez",
+            "rating": 4,
+            "content": "El ensamblaje no es sencillo, pero siguiendo los tutoriales de YouTube logré armarlo sin problemas. El software es fácil de usar."
+          },
+          {
+            "name": "Carlos Sánchez",
+            "rating": 5,
+            "content": "Funciona perfectamente con LightBurn. La configuración tomó una hora, pero con los tutoriales es fácil de aprender."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Vevor?",
+        "content": "Vevor se destaca por ofrecer productos asequibles y confiables con una excelente calidad de fabricación. Su red global de distribución garantiza envíos rápidos y eficientes, mientras que su servicio de atención al cliente está disponible en todo momento para resolver cualquier inquietud.",
+        "image": "/imagenes/vevor-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser Vevor en uso"
+      },
+      "faqs": [
+        {
+          "question": "¿Dónde puedo comprar productos de Vevor?",
+          "answer": "Puedes adquirir productos de Vevor en su web oficial, Amazon, eBay y otras plataformas de comercio electrónico."
+        },
+        {
+          "question": "¿Cuál es la garantía de los productos Vevor?",
+          "answer": "Todos los productos cuentan con una garantía de un año y una política de devolución de 30 días."
+        },
+        {
+          "question": "¿Qué tipo de atención al cliente ofrece Vevor?",
+          "answer": "Vevor ofrece soporte 24/7 a través de su centro de atención, con opciones de chat en vivo y formularios de soporte técnico."
+        }
+      ]
+    },
+    {
+      "id": "xtool",
+      "name": "xTool",
+      "slug": "xtool",
+      "logo": "/imagenes/xtool-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "xTool revoluciona la creatividad con herramientas de grabado láser innovadoras y fáciles de usar.",
+      "alternativeDescription": "xTool transforma ideas en realidad a través de tecnología láser avanzada, ayudando a creadores de todos los niveles.",
+      "longDescription": "xTool nació con la misión de hacer la creación más accesible para todos. A través de tecnología de vanguardia, la marca ofrece herramientas de grabado y corte láser que permiten a los usuarios explorar su creatividad sin límites. Con una combinación de diseño intuitivo y software fácil de usar, xTool ha conseguido que tanto aficionados como profesionales puedan materializar sus ideas con precisión y calidad.",
+      "contentBrand": "La esencia de xTool radica en su compromiso con la creatividad sin barreras. Sus productos están diseñados para simplificar el proceso de grabado, desde proyectos de bricolaje hasta aplicaciones comerciales. Con un enfoque en la innovación continua y la satisfacción del cliente, xTool se ha posicionado como líder en la industria, ofreciendo soluciones tecnológicas que facilitan la creación de productos personalizados de alta calidad.",
+      "features": [
+        "Tecnología láser de alta precisión",
+        "Software intuitivo para todos los niveles",
+        "Diseño robusto y duradero",
+        "Excelente servicio de atención al cliente"
+      ],
+      "website": "https://www.xtool.com/",
+      "brandReviews": {
+        "summary": "Los usuarios de xTool destacan su facilidad de uso, precisión de grabado y la calidad de sus materiales, lo que la convierte en una opción ideal para creadores de todo tipo.",
+        "reviews": [
+          {
+            "name": "Laura B.",
+            "rating": 5,
+            "content": "El xTool F1 Ultra ha superado mis expectativas. Su diseño elegante y su construcción robusta lo hacen perfecto para mis proyectos personalizados. La configuración fue sencilla, y el software es fácil de manejar, ofreciendo resultados detallados y precisos."
+          },
+          {
+            "name": "Mike S.",
+            "rating": 5,
+            "content": "Estoy impresionado por la velocidad y eficiencia del grabador láser xTool. Desde que lo compré, he podido completar mis proyectos en menos tiempo, con resultados impecables. Lo recomiendo a cualquiera que quiera un grabador rápido y fácil de usar."
+          },
+          {
+            "name": "C. Cronin",
+            "rating": 5,
+            "content": "Como principiante en el grabado, el xTool F1 Ultra ha sido una gran elección. Su facilidad de uso y la calidad de los grabados me han permitido expandir mis proyectos de manera profesional. El servicio al cliente también ha sido excepcional."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir xTool?",
+        "content": "xTool no solo ofrece herramientas de grabado, sino una experiencia completa que facilita la creatividad. Con una combinación de precisión, velocidad y facilidad de uso, sus productos están diseñados para ayudar tanto a aficionados como a empresas a transformar sus ideas en productos de alta calidad.",
+        "image": "/imagenes/xtool-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser xTool en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Qué materiales se pueden grabar con xTool?",
+          "answer": "xTool es compatible con una amplia variedad de materiales, como madera, cuero, metal pintado, vidrio y acrílico oscuro, ofreciendo resultados precisos en cada uno."
+        },
+        {
+          "question": "¿xTool es fácil de configurar para principiantes?",
+          "answer": "Sí, los productos de xTool están diseñados para una configuración sencilla con guías detalladas y software intuitivo, lo que los hace ideales para cualquier persona."
+        },
+        {
+          "question": "¿Puedo trabajar sin conexión con mi grabador xTool?",
+          "answer": "Sí, los grabadores xTool permiten importar archivos previamente y trabajar sin necesidad de conexión continua a una computadora."
+        }
+      ]
+    },
+    {
+      "id": "twotrees",
+      "name": "Two Trees",
+      "slug": "two-trees",
+      "logo": "/imagenes/twotrees-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Two Trees ofrece soluciones avanzadas en grabado láser, CNC para carpintería e impresión 3D con una combinación de innovación y accesibilidad.",
+      "alternativeDescription": "Two Trees es sinónimo de innovación y precisión en herramientas de grabado láser, CNC y impresión 3D, diseñadas para creativos de todos los niveles.",
+      "longDescription": "Two Trees es una empresa tecnológica especializada en la fabricación de máquinas CNC para carpintería, grabadores láser e impresoras 3D de nivel consumidor. Con un fuerte compromiso hacia la innovación, Two Trees desarrolla productos eficientes y accesibles para profesionales y entusiastas del bricolaje. Sus equipos cuentan con certificaciones internacionales como FCC, CE y ROHS, garantizando la calidad y seguridad de cada máquina.",
+      "contentBrand": "Two Trees se destaca en el mercado por su capacidad para ofrecer herramientas avanzadas a precios competitivos. Su misión es democratizar el acceso a la tecnología de grabado láser y CNC, brindando soluciones potentes y versátiles para usuarios de todos los niveles. Con un equipo de expertos dedicados a la mejora constante de sus productos, Two Trees se ha consolidado como una marca de referencia en el ámbito del bricolaje, la carpintería y la fabricación digital.",
+      "features": [
+        "Tecnología innovadora con certificaciones internacionales",
+        "Fácil de usar, ideal para principiantes y profesionales",
+        "Amplia compatibilidad con software de grabado",
+        "Gran relación calidad-precio"
+      ],
+      "website": "https://www.twotrees3dofficial.com",
+      "brandReviews": {
+        "summary": "Los usuarios de Two Trees valoran especialmente la facilidad de uso de sus máquinas, la precisión de los grabados y la atención al cliente de la marca.",
+        "reviews": [
+          {
+            "name": "Brandon",
+            "rating": 5,
+            "content": "Este grabador láser superó mis expectativas. La relación calidad-precio es excelente y su rendimiento es más que suficiente para mis proyectos de bricolaje."
+          },
+          {
+            "name": "Survivor327",
+            "rating": 4,
+            "content": "Es un grabador perfecto para proyectos pequeños y personales. Aunque tiene algunas limitaciones en metales, para madera y cuero funciona de maravilla."
+          },
+          {
+            "name": "Mals",
+            "rating": 5,
+            "content": "Como principiante, estaba preocupado por la configuración, pero fue más fácil de lo que esperaba. El software gratuito LaserGRBL también es fácil de usar."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Two Trees?",
+        "content": "Two Trees combina tecnología de vanguardia con facilidad de uso, ofreciendo herramientas precisas y asequibles para quienes buscan potenciar su creatividad. Su compromiso con la calidad y la innovación la convierten en una marca confiable para proyectos tanto personales como comerciales.",
+        "image": "/imagenes/two-trees-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser Two Trees en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Two Trees es compatible con LightBurn?",
+          "answer": "Sí, las máquinas Two Trees son compatibles con LightBurn y LaserGRBL, ofreciendo flexibilidad para diferentes necesidades de grabado."
+        },
+        {
+          "question": "¿Se puede grabar en metales con los grabadores Two Trees?",
+          "answer": "Se pueden grabar ciertos metales con recubrimiento, pero para metales como el cobre o el latón, se requieren técnicas adicionales como el uso de recubrimientos especiales."
+        },
+        {
+          "question": "¿Es complicado ensamblar las máquinas de Two Trees?",
+          "answer": "No, el ensamblaje es sencillo con las instrucciones detalladas incluidas. Además, hay tutoriales en video disponibles para facilitar el proceso."
+        }
+      ]
+    },
+    {
+      "id": "sculpfun",
+      "name": "Sculpfun",
+      "slug": "sculpfun",
+      "logo": "/imagenes/sculpfun-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Sculpfun ofrece máquinas de grabado láser accesibles y potentes para entusiastas del bricolaje y profesionales creativos.",
+      "alternativeDescription": "Sculpfun se especializa en grabadores láser domésticos que combinan calidad, facilidad de uso y tecnología avanzada.",
+      "longDescription": "Sculpfun es una marca de referencia en el mundo del grabado láser, dedicada a ofrecer equipos de alta calidad para usuarios de todos los niveles. Sus productos están diseñados para aportar creatividad y diversión en el hogar, con un enfoque en la comodidad, la seguridad y la facilidad de uso. A través de una constante innovación y estrictos controles de calidad, Sculpfun garantiza una experiencia de grabado excepcional. La marca colabora con las principales empresas de tecnología láser para optimizar la miniaturización y mejorar las capacidades de grabado.",
+      "contentBrand": "Sculpfun se ha consolidado como una marca confiable y accesible en el mercado de los grabadores láser domésticos. Sus productos son elogiados por su facilidad de uso, rendimiento eficiente y soporte técnico rápido. La marca se centra en brindar soluciones intuitivas que permitan a los usuarios disfrutar del grabado sin complicaciones. Con una fuerte presencia en plataformas de comercio electrónico y redes sociales, Sculpfun se ha ganado la confianza de miles de usuarios alrededor del mundo.",
+      "features": [
+        "Fácil de usar, ideal para principiantes",
+        "Tecnología láser avanzada con alta precisión",
+        "Amplia compatibilidad con materiales diversos",
+        "Soporte técnico rápido y eficiente"
+      ],
+      "website": "https://sculpfun.es/",
+      "brandReviews": {
+        "summary": "Los clientes de Sculpfun destacan su excelente relación calidad-precio, facilidad de uso y rendimiento confiable en proyectos de grabado y corte.",
+        "reviews": [
+          {
+            "name": "Jazz",
+            "rating": 5,
+            "content": "Es un grabador muy bueno, pero es importante tener expectativas realistas. Funciona perfectamente en madera delgada, aunque requiere paciencia para materiales más gruesos."
+          },
+          {
+            "name": "Tony",
+            "rating": 5,
+            "content": "Mi primera experiencia con un grabador láser ha sido excelente con Sculpfun. Fácil de ensamblar y con un rendimiento increíble para proyectos de bricolaje."
+          },
+          {
+            "name": "Michael Willis",
+            "rating": 5,
+            "content": "Gran máquina por su precio. La superficie de trabajo es amplia y el grabado es rápido y preciso. Me hubiera gustado que tuviera su propio software dedicado."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Sculpfun?",
+        "content": "Sculpfun combina la más avanzada tecnología de grabado con un diseño fácil de usar, permitiendo a los usuarios disfrutar de una experiencia creativa sin complicaciones. Sus máquinas ofrecen un equilibrio perfecto entre calidad y precio, ideales tanto para principiantes como para expertos.",
+        "image": "/imagenes/sculpfun-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser Sculpfun en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Es compatible con LightBurn?",
+          "answer": "Sí, las máquinas Sculpfun son totalmente compatibles con LightBurn y otros programas como LaserGRBL."
+        },
+        {
+          "question": "¿Se necesita aire asistido para cortar madera gruesa?",
+          "answer": "El aire asistido mejora significativamente el corte de materiales gruesos, aunque algunas máquinas Sculpfun aún no lo incluyen de fábrica."
+        },
+        {
+          "question": "¿Es necesario ensamblar la máquina?",
+          "answer": "Sí, pero el proceso es sencillo y se proporcionan instrucciones detalladas junto con videos tutoriales."
+        }
+      ]
+    },
+    {
+      "id": "sainsmart",
+      "name": "SainSmart",
+      "slug": "sainsmart",
+      "logo": "/imagenes/sainsmart-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "SainSmart empodera a los creadores con herramientas accesibles para convertir ideas en realidad.",
+      "alternativeDescription": "Con SainSmart, los entusiastas del bricolaje encuentran soluciones innovadoras para hacer realidad sus proyectos creativos.",
+      "longDescription": "SainSmart se ha consolidado como un referente en el mundo del bricolaje y la fabricación casera, proporcionando herramientas de calidad para makers de todos los niveles. Desde su fundación, la misión de la marca ha sido clara: poner el poder de la creación en manos de los usuarios. Con una amplia gama de productos, que incluyen grabadoras láser y soluciones CNC, SainSmart combina tecnología avanzada con precios asequibles, permitiendo que la innovación no tenga límites.",
+      "contentBrand": "Elegir SainSmart significa optar por una marca que entiende las necesidades de los creadores. Sus productos destacan por su facilidad de uso, precisión y versatilidad, lo que los convierte en la elección ideal tanto para principiantes como para profesionales. Además, la marca se distingue por su comunidad activa y su excelente soporte postventa, asegurando que cada proyecto sea un éxito.",
+      "features": [
+        "Tecnología de grabado láser de última generación",
+        "Alta precisión para resultados detallados",
+        "Soporte técnico eficiente y comunidad activa",
+        "Diseño pensado para facilitar el uso"
+      ],
+      "website": "https://www.sainsmart.com/",
+      "brandReviews": {
+        "summary": "Los clientes de SainSmart elogian su excelente calidad de construcción, facilidad de uso y el gran valor que ofrece en comparación con otras marcas.",
+        "reviews": [
+          {
+            "name": "Christopher T.",
+            "rating": 5,
+            "content": "Reemplazar mi antigua grabadora por un modelo de SainSmart fue una gran decisión. La calidad y velocidad de grabado han mejorado notablemente, y la inclusión de la cámara facilita la alineación de los proyectos."
+          },
+          {
+            "name": "Tanya Ferguson",
+            "rating": 4,
+            "content": "La relación calidad-precio es excelente, aunque la ventilación podría ser más potente. A pesar de algunos ajustes necesarios, sigue siendo una gran inversión para proyectos personales."
+          },
+          {
+            "name": "Naomi Johnson",
+            "rating": 5,
+            "content": "Aunque la instalación no fue sencilla por la falta de instrucciones claras, el rendimiento de la máquina es impresionante. Ideal para quienes buscan precisión y versatilidad."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "Por qué elegir SainSmart",
+        "content": "SainSmart es una marca reconocida por ofrecer productos de alta calidad a precios accesibles. Su compromiso con la comunidad maker, combinado con herramientas fáciles de usar y un soporte excepcional, la convierten en una opción confiable para quienes buscan precisión y rendimiento.",
+        "image": "/imagenes/sainsmart-opiniones.jpg",
+        "imageAlt": "Grabadora láser SainSmart en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Es compatible con LightBurn?",
+          "answer": "Sí, las grabadoras láser de SainSmart son compatibles con LightBurn y otros softwares populares de control."
+        },
+        {
+          "question": "¿Se necesita ensamblaje para las máquinas de SainSmart?",
+          "answer": "Sí, aunque el montaje es relativamente sencillo, se recomienda seguir los tutoriales en línea disponibles para una instalación sin problemas."
+        },
+        {
+          "question": "¿SainSmart ofrece accesorios adicionales para sus grabadoras?",
+          "answer": "Sí, la marca ofrece una amplia gama de accesorios como aire asistido, cámaras de alineación y materiales compatibles."
+        }
+      ]
+    },
+    {
+      "id": "peixu",
+      "name": "Peixu",
+      "slug": "peixu",
+      "logo": "/imagenes/peixu-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Peixu es una marca consolidada con más de 15 años de experiencia, ofreciendo soluciones de grabado láser de alta calidad a nivel global.",
+      "alternativeDescription": "Con una sólida presencia internacional, Peixu proporciona grabadoras láser de alto rendimiento y un servicio de atención al cliente excepcional.",
+      "longDescription": "Fundada en 2007, Peixu se ha consolidado como un proveedor global especializado en grabadoras láser y otros productos tecnológicos de alto rendimiento. Con más de 15 años de experiencia en el sector, la marca ha establecido almacenes en múltiples ubicaciones clave alrededor del mundo, garantizando entregas rápidas y un servicio de atención al cliente cercano. Peixu se distingue por su compromiso con la calidad, la innovación y la satisfacción del cliente, ofreciendo productos diseñados para una amplia gama de aplicaciones profesionales e industriales.",
+      "contentBrand": "Peixu es una marca confiable y profesional, ideal para aquellos que buscan equipos de grabado láser de alta precisión. Sus máquinas destacan por su robustez, facilidad de montaje y excelente relación calidad-precio. La marca ofrece un soporte técnico eficaz, asegurando que los clientes siempre tengan la asistencia que necesitan para optimizar su experiencia de uso.",
+      "features": [
+        "Más de 15 años de experiencia en la industria",
+        "Almacenes en múltiples países para entregas rápidas",
+        "Soporte técnico profesional en varios idiomas",
+        "Equipos de alta precisión con excelente relación calidad-precio"
+      ],
+      "website": "https://peixu.en.alibaba.com/",
+      "brandReviews": {
+        "summary": "Peixu es altamente valorada por su calidad de producto, atención al cliente y la facilidad de montaje de sus máquinas. Los clientes destacan la fiabilidad y el servicio postventa eficiente.",
+        "reviews": [
+          {
+            "name": "Alessandro A.",
+            "rating": 5,
+            "content": "Excelente relación calidad-precio. El vendedor siempre está disponible para ayudar en caso de dudas. La máquina llegó con todos los accesorios necesarios para su instalación."
+          },
+          {
+            "name": "Pistacchio",
+            "rating": 5,
+            "content": "El equipo funciona a la perfección y el servicio de asistencia es siempre rápido y eficiente. Estoy muy satisfecho con la compra."
+          },
+          {
+            "name": "Cliente verificado",
+            "rating": 5,
+            "content": "El producto llegó bien embalado y a tiempo. El vendedor fue muy profesional y atento en todo momento. Gran servicio y equipo de calidad."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "Por qué elegir Peixu",
+        "content": "Peixu ofrece grabadoras láser diseñadas para profesionales que buscan un equilibrio entre precio y calidad. Sus equipos se caracterizan por su fácil montaje, alta precisión y un servicio de atención al cliente atento y resolutivo.",
+        "image": "/imagenes/peixu-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser Peixu en funcionamiento"
+      },
+      "faqs": [
+        {
+          "question": "¿Cuánto tiempo tarda en llegar un pedido?",
+          "answer": "Gracias a nuestros almacenes estratégicamente ubicados, los pedidos suelen llegar en un plazo de 2 a 5 días hábiles, dependiendo de la ubicación del cliente."
+        },
+        {
+          "question": "¿Peixu ofrece soporte técnico después de la compra?",
+          "answer": "Sí, contamos con un equipo de soporte profesional que responde a todas las consultas en un plazo de 24 horas."
+        },
+        {
+          "question": "¿Las grabadoras láser de Peixu son fáciles de instalar?",
+          "answer": "Sí, todas las máquinas vienen con los accesorios necesarios para un montaje sencillo, además de instrucciones detalladas para facilitar el proceso."
+        }
+      ]
+    },
+    {
+      "id": "omtech",
+      "name": "OMTech",
+      "slug": "omtech",
+      "logo": "/imagenes/omtech-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "OMTech es una marca líder en grabadoras láser, reconocida por su calidad, precisión y servicio técnico especializado.",
+      "alternativeDescription": "OMTech hace accesible la tecnología láser profesional para todos, combinando innovación y un excelente servicio al cliente.",
+      "longDescription": "OMTech es una marca con más de una década de experiencia en la industria del grabado láser, nacida en Anaheim, California. La empresa ha crecido rápidamente gracias a su compromiso con la calidad, la innovación y la satisfacción del cliente. OMTech ofrece máquinas láser que combinan rendimiento profesional con precios accesibles, ideales tanto para pequeños negocios como para entusiastas del bricolaje. Con una comunidad en constante crecimiento, la marca se ha convertido en un referente en el sector, proporcionando herramientas que permiten llevar la creatividad al siguiente nivel.",
+      "contentBrand": "Elegir OMTech significa optar por un grabado láser de precisión sin comprometer el presupuesto. Sus máquinas están diseñadas para ofrecer facilidad de uso, rendimiento duradero y soporte técnico excepcional. Desde pequeños proyectos DIY hasta producciones comerciales, OMTech proporciona las soluciones adecuadas para cada necesidad.",
+      "features": [
+        "Más de 10 años de experiencia en grabado láser",
+        "Máquinas láser de alto rendimiento a precios accesibles",
+        "Soporte técnico especializado y eficiente",
+        "Amplia variedad de modelos para todos los niveles"
+      ],
+      "website": "https://omtechlaser.es/",
+      "brandReviews": {
+        "summary": "OMTech ha recibido valoraciones positivas por su excelente relación calidad-precio, rápida entrega y servicio técnico eficiente. Los usuarios destacan la facilidad de uso y la precisión de sus máquinas.",
+        "reviews": [
+          {
+            "name": "Cliente Amazon",
+            "rating": 5,
+            "content": "El envío fue rápido y la máquina llegó en perfectas condiciones. Incluye todo lo necesario para comenzar a trabajar, aunque recomendaría añadir un Chiller para un mejor rendimiento. El soporte técnico es muy eficiente y resuelve cualquier duda rápidamente."
+          },
+          {
+            "name": "Vardan",
+            "rating": 5,
+            "content": "Estoy encantado con mi compra. La máquina es de excelente calidad y llegó en perfectas condiciones. El servicio de atención al cliente es muy profesional y siempre están disponibles para ayudar con cualquier problema."
+          },
+          {
+            "name": "Joaquín",
+            "rating": 5,
+            "content": "Llevo un mes utilizando la máquina y funciona de maravilla. Llegó bien calibrada y lista para usar, sin necesidad de ajustes adicionales. Muy recomendable para cualquier negocio."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir OMTech?",
+        "content": "OMTech ofrece grabadoras láser con un equilibrio perfecto entre calidad, precio y rendimiento. Su fácil instalación y su robusto soporte técnico la convierten en una opción ideal para quienes buscan resultados profesionales sin complicaciones.",
+        "image": "/imagenes/omtech-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser OMTech en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Las máquinas OMTech vienen calibradas de fábrica?",
+          "answer": "Sí, todas las máquinas OMTech llegan completamente calibradas y listas para su uso inmediato."
+        },
+        {
+          "question": "¿Qué garantía ofrecen en sus productos?",
+          "answer": "OMTech ofrece una garantía de un año en todas sus máquinas, además de soporte técnico especializado."
+        },
+        {
+          "question": "¿Cuánto tarda el envío?",
+          "answer": "El envío suele tardar entre 5 y 10 días hábiles, dependiendo de la ubicación del cliente."
+        }
+      ]
+    },
+    {
+      "id": "mecpow",
+      "name": "Mecpow",
+      "slug": "mecpow",
+      "logo": "/imagenes/mecpow-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Mecpow es sinónimo de innovación y seguridad en el mundo del grabado láser, ofreciendo herramientas accesibles y de alto rendimiento.",
+      "alternativeDescription": "Con Mecpow, la creatividad se une a la tecnología para proporcionar soluciones seguras, eficientes y fáciles de usar para todos los niveles de experiencia.",
+      "longDescription": "Mecpow nace con una misión clara: hacer que el grabado y corte láser sean accesibles para todos, desde aficionados hasta profesionales. La marca se destaca por su enfoque en la seguridad, la precisión y la facilidad de uso, permitiendo que cualquier persona pueda dar vida a sus proyectos creativos con total confianza. Con un diseño robusto y tecnología de última generación, las máquinas Mecpow ofrecen una excelente relación calidad-precio y una experiencia de usuario inigualable.",
+      "contentBrand": "Optar por Mecpow significa elegir un equilibrio perfecto entre innovación, accesibilidad y seguridad. Sus productos están diseñados para potenciar la creatividad sin complicaciones, ofreciendo herramientas que se adaptan tanto a principiantes como a usuarios avanzados. Con un compromiso firme con la calidad, Mecpow garantiza un soporte técnico excepcional y productos que cumplen con los más altos estándares de seguridad.",
+      "features": [
+        "Máxima seguridad en su categoría",
+        "Facilidad de uso para principiantes",
+        "Compatibilidad con software líder como LightBurn",
+        "Relación calidad-precio insuperable"
+      ],
+      "website": "https://mecpow.com/",
+      "brandReviews": {
+        "summary": "Los usuarios de Mecpow destacan su excelente rendimiento, facilidad de montaje y la precisión de sus máquinas. La atención al cliente es valorada por su rapidez y eficacia.",
+        "reviews": [
+          {
+            "name": "Leonardo G.",
+            "rating": 5,
+            "content": "Increíble relación calidad-precio. La máquina llegó bien embalada, con instrucciones claras y herramientas incluidas. En pocos minutos estaba lista para usarse. Recomiendo usar LightBurn para sacarle el máximo provecho."
+          },
+          {
+            "name": "José Luis Pinilla Álvarez",
+            "rating": 5,
+            "content": "Magnífico equipo, fácil de montar y con un rendimiento impecable. Los materiales son de alta calidad y la precisión es sorprendente. Totalmente recomendable."
+          },
+          {
+            "name": "Deiene",
+            "rating": 5,
+            "content": "Ideal para principiantes, fácil de configurar y con resultados profesionales. Recomiendo adquirir una base metálica para proteger la superficie de trabajo."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Mecpow?",
+        "content": "Mecpow destaca por su combinación de tecnología avanzada y accesibilidad, ofreciendo herramientas seguras y de alto rendimiento para todos los niveles de experiencia.",
+        "image": "/imagenes/mecpow-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser Mecpow en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Las máquinas Mecpow son compatibles con LightBurn?",
+          "answer": "Sí, las máquinas Mecpow son compatibles con LightBurn, lo que permite un control avanzado del grabado y corte láser."
+        },
+        {
+          "question": "¿Es difícil el montaje de las máquinas Mecpow?",
+          "answer": "No, el montaje es sencillo y se completa en aproximadamente 20 minutos con las herramientas incluidas."
+        },
+        {
+          "question": "¿Qué garantía ofrecen en sus productos?",
+          "answer": "Mecpow ofrece una garantía de 1 año y un servicio de atención al cliente disponible 24/7."
+        }
+      ]
+    },
+    {
+      "id": "mcwlaser",
+      "name": "MCWlaser",
+      "slug": "mcwlaser",
+      "logo": "/imagenes/mcwlaser-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "MCWlaser es una marca líder en la industria láser, ofreciendo soluciones avanzadas y confiables para aplicaciones profesionales y domésticas.",
+      "alternativeDescription": "Con más de una década de experiencia, MCWlaser se especializa en tecnología láser de vanguardia, garantizando productos de alta calidad respaldados por un excelente soporte técnico.",
+      "longDescription": "Desde su fundación en 2007, MCWlaser se ha consolidado como una empresa de referencia en el sector láser, proporcionando soluciones integrales que abarcan desde el desarrollo hasta la postventa. Con un enfoque en la innovación y la satisfacción del cliente, MCWlaser ofrece productos con los más altos estándares de seguridad y rendimiento, dirigidos tanto a profesionales como a entusiastas del bricolaje.",
+      "contentBrand": "Elegir MCWlaser significa optar por calidad, experiencia y servicio. La marca se distingue por su compromiso con la excelencia, proporcionando productos que cumplen con certificaciones internacionales y garantizando un soporte técnico eficaz. Ya sea para proyectos industriales o personales, MCWlaser ofrece soluciones que combinan precisión, seguridad y facilidad de uso.",
+      "features": [
+        "Más de 10 años de experiencia en la industria láser",
+        "Soporte técnico especializado",
+        "Productos con certificaciones internacionales como EN-207",
+        "Amplia gama de soluciones para aplicaciones industriales y domésticas"
+      ],
+      "website": "https://www.mcwlaser.com/",
+      "brandReviews": {
+        "summary": "MCWlaser recibe constantes elogios por la calidad de sus productos y su excelente servicio postventa. Los clientes destacan la fiabilidad de los dispositivos y la rapidez de atención ante cualquier consulta.",
+        "reviews": [
+          {
+            "name": "Erik N.",
+            "rating": 5,
+            "content": "Las gafas de seguridad tienen una construcción robusta y cumplen su función perfectamente al bloquear la luz azul. Además, el servicio de atención al cliente fue rápido y resolvió todas mis dudas sobre las especificaciones técnicas."
+          },
+          {
+            "name": "Sergio",
+            "rating": 5,
+            "content": "Excelente calidad en las gafas láser. Son indispensables para trabajar con seguridad y ofrecen una protección óptima. Muy recomendables."
+          },
+          {
+            "name": "P. Eier",
+            "rating": 5,
+            "content": "Encajan perfectamente sobre mis gafas graduadas. Son cómodas, de gran calidad y cuentan con la certificación EN-207, lo que me da total confianza en su uso."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir MCWlaser?",
+        "content": "MCWlaser ofrece productos de alta calidad respaldados por años de experiencia en el sector láser. Sus soluciones están diseñadas para garantizar un rendimiento fiable y seguro en cualquier aplicación.",
+        "image": "/imagenes/mcwlaser-opiniones.jpg",
+        "imageAlt": "Gafas de protección MCWlaser en uso"
+      },
+      "faqs": [
+        {
+          "question": "¿Las gafas de seguridad MCWlaser son compatibles con láseres de alta potencia?",
+          "answer": "Sí, están certificadas bajo la norma EN-207 y proporcionan una protección eficaz contra la radiación láser."
+        },
+        {
+          "question": "¿Ofrecen soporte técnico en Europa?",
+          "answer": "Sí, contamos con un centro de atención al cliente en Alemania para ofrecer soporte rápido y eficiente."
+        },
+        {
+          "question": "¿Puedo comprar los productos MCWlaser en línea?",
+          "answer": "Sí, nuestros productos están disponibles en nuestra web oficial y en plataformas como Amazon y AliExpress."
+        }
+      ]
+    },
+    {
+      "id": "longer",
+      "name": "LONGER",
+      "slug": "longer",
+      "logo": "/imagenes/longer-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "LONGER es una marca innovadora que ofrece soluciones avanzadas de impresión 3D y grabado láser con tecnología de vanguardia.",
+      "alternativeDescription": "LONGER combina innovación y accesibilidad en sus productos, proporcionando herramientas de alta calidad para creadores, empresas y entusiastas del bricolaje.",
+      "longDescription": "Desde su fundación en 2016, LONGER ha revolucionado la industria de la impresión 3D y el grabado láser, proporcionando soluciones accesibles sin comprometer la calidad. Con su propia instalación de fabricación certificada ISO9001 y una sólida base de patentes, LONGER se ha consolidado como una marca confiable a nivel global. Su compromiso con la innovación y el servicio al cliente les permite ofrecer productos versátiles y adaptables a diversas aplicaciones.",
+      "contentBrand": "LONGER es sinónimo de calidad, innovación y accesibilidad. Desde su fundación, la marca ha roto barreras tecnológicas para ofrecer productos que combinan potencia y precisión a precios competitivos. Su compromiso con la mejora continua se refleja en su ecosistema de accesorios y en el desarrollo de software propio como LaserBurn, que optimiza la experiencia del usuario.",
+      "features": [
+        "Más de 50 patentes en tecnología láser y 3D",
+        "Fácil instalación y uso intuitivo",
+        "Compatibilidad con diversos materiales como madera y cuero",
+        "Software LaserBurn con opciones avanzadas de personalización"
+      ],
+      "website": "https://www.longer3d.com/",
+      "brandReviews": {
+        "summary": "LONGER recibe valoraciones positivas por su relación calidad-precio y su facilidad de uso. Los usuarios destacan su capacidad para proyectos tanto personales como profesionales.",
+        "reviews": [
+          {
+            "name": "Amazon Kunde",
+            "rating": 4,
+            "content": "Al principio, la máquina requería ajustes para obtener resultados precisos, pero tras configurarla correctamente, funciona de maravilla. Es una excelente opción para principiantes a un precio accesible."
+          },
+          {
+            "name": "Marcel Hellmann",
+            "rating": 5,
+            "content": "Relación calidad-precio insuperable. Funciona de manera excelente y cumple con lo prometido."
+          },
+          {
+            "name": "S.C",
+            "rating": 5,
+            "content": "Estoy encantado con esta grabadora. La instalación fue muy fácil gracias a las instrucciones detalladas, y los resultados son sorprendentes. Sin duda, una gran compra."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "Por qué elegir LONGER",
+        "content": "LONGER ofrece soluciones de grabado láser e impresión 3D accesibles y de calidad profesional. Sus productos están diseñados para adaptarse a las necesidades de principiantes y expertos, con una combinación de potencia y facilidad de uso.",
+        "image": "/imagenes/longer-opiniones.jpg",
+        "imageAlt": "Máquina de grabado láser LONGER en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿LONGER es adecuada para principiantes?",
+          "answer": "Sí, los productos de LONGER están diseñados para ser fáciles de usar, con guías detalladas y una configuración sencilla para principiantes."
+        },
+        {
+          "question": "¿Con qué materiales es compatible?",
+          "answer": "LONGER es compatible con una amplia variedad de materiales, incluyendo madera, cuero, acrílico y más."
+        },
+        {
+          "question": "¿El software LaserBurn es fácil de usar?",
+          "answer": "Sí, LaserBurn ofrece una interfaz intuitiva y múltiples opciones de personalización para optimizar cada proyecto de grabado."
+        }
+      ]
+    },
+    {
+      "id": "lightburn",
+      "name": "LightBurn",
+      "slug": "lightburn",
+      "logo": "/imagenes/lightburn-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "LightBurn es un potente software de diseño, edición y control para máquinas de corte láser, compatible con múltiples sistemas operativos.",
+      "alternativeDescription": "LightBurn simplifica el proceso de grabado láser con herramientas intuitivas y potentes, permitiendo a los usuarios diseñar, editar y controlar sus proyectos con precisión.",
+      "longDescription": "LightBurn es una solución integral para el control de cortadoras láser, ofreciendo herramientas avanzadas para diseño, edición y configuración de parámetros de corte. Su compatibilidad con diversos formatos de archivo y su capacidad de comunicación directa con la máquina convierten a LightBurn en una opción preferida tanto por principiantes como por profesionales del grabado láser. Disponible para Windows, Mac OS y Linux, proporciona un entorno flexible y eficiente para maximizar la creatividad y productividad de sus usuarios.",
+      "contentBrand": "LightBurn es la opción ideal para quienes buscan un software potente y versátil para sus máquinas de grabado láser. Su interfaz intuitiva, la amplia compatibilidad con controladores y su capacidad para personalizar cada aspecto del proceso de grabado hacen de LightBurn una herramienta imprescindible en cualquier taller.",
+      "features": [
+        "Compatible con múltiples formatos de imagen y vector",
+        "Herramientas avanzadas de edición como booleanas y nodos",
+        "Configuración detallada de potencia, velocidad y pasadas",
+        "Compatible con Windows, Mac OS y Linux",
+        "Envío directo a la máquina sin necesidad de software adicional"
+      ],
+      "website": "https://lightburnsoftware.com/",
+      "brandReviews": {
+        "summary": "LightBurn recibe excelentes valoraciones por su facilidad de uso y la amplia gama de funciones que ofrece. Los usuarios destacan su versatilidad y la precisión que proporciona en el control del grabado láser.",
+        "reviews": [
+          {
+            "name": "Sérgio Lima",
+            "rating": 5,
+            "content": "El software es excelente y muy completo. Mi única queja es no haberlo comprado antes, ya que el precio subió con el tiempo, pero sin duda vale cada céntimo."
+          },
+          {
+            "name": "Amazon Customer",
+            "rating": 5,
+            "content": "Funciona perfectamente. Tiene muchas características útiles que hacen que el proceso de grabado sea más sencillo y preciso."
+          },
+          {
+            "name": "David08",
+            "rating": 5,
+            "content": "Recibí mi código de activación en menos de 48 horas. El software cumple con todas mis expectativas y lo recomiendo totalmente."
+          },
+          {
+            "name": "A. B.",
+            "rating": 5,
+            "content": "Es un programa complejo pero extremadamente versátil. Requiere cierto aprendizaje, pero ofrece un sinfín de posibilidades creativas."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "Por qué elegir LightBurn",
+        "content": "LightBurn es la solución definitiva para los profesionales y entusiastas del grabado láser. Su facilidad de uso, combinada con herramientas avanzadas de diseño y control, lo convierten en la elección perfecta para optimizar tu flujo de trabajo.",
+        "image": "/imagenes/lightburn-opiniones.jpg",
+        "imageAlt": "Captura de pantalla del software LightBurn en uso"
+      },
+      "faqs": [
+        {
+          "question": "¿LightBurn es compatible con mi máquina láser?",
+          "answer": "LightBurn es compatible con una amplia gama de controladores como Ruida, Trocen, TopWisdom y controladores basados en GCode como Grbl y Smoothieware. Se recomienda probar la versión gratuita para verificar la compatibilidad."
+        },
+        {
+          "question": "¿Puedo utilizar LightBurn en varios ordenadores?",
+          "answer": "Sí, una licencia de LightBurn permite su uso en hasta dos dispositivos simultáneamente, con soporte para Windows, Mac OS y Linux."
+        },
+        {
+          "question": "¿LightBurn ofrece actualizaciones?",
+          "answer": "Sí, la compra de una licencia incluye un año de actualizaciones gratuitas. Posteriormente, puedes seguir usando la versión adquirida sin restricciones, pero sin nuevas actualizaciones."
+        }
+      ]
+    },
+    {
+      "id": "laserpecker",
+      "name": "LaserPecker",
+      "slug": "laserpecker",
+      "logo": "/imagenes/laserpecker-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "LaserPecker es una marca innovadora especializada en grabadoras láser portátiles y potentes, diseñadas para estimular la creatividad en cualquier lugar.",
+      "alternativeDescription": "LaserPecker transforma la creatividad con su gama de grabadoras láser compactas, precisas y fáciles de usar, ideales para profesionales y entusiastas del bricolaje.",
+      "longDescription": "Desde su creación, LaserPecker se ha dedicado a revolucionar el grabado láser mediante dispositivos portátiles, potentes y accesibles. Con una comunidad global de usuarios y un compromiso constante con la innovación, LaserPecker ofrece herramientas que permiten a los creadores dar vida a sus ideas con facilidad. Sus productos combinan tecnología avanzada con un diseño compacto y fácil de usar, permitiendo un grabado de alta precisión en una amplia variedad de materiales.",
+      "contentBrand": "LaserPecker es la elección ideal para quienes buscan una herramienta de grabado versátil, portátil y de alto rendimiento. Su tecnología de doble láser permite trabajar sobre diversos materiales con facilidad, mientras que su intuitiva aplicación móvil hace que el proceso de grabado sea accesible para todos, desde aficionados hasta profesionales. Además, su compromiso con la mejora continua se refleja en su constante actualización de software y en su atención al cliente altamente valorada.",
+      "features": [
+        "Diseño compacto y portátil",
+        "Doble tecnología láser para mayor versatilidad",
+        "Compatible con múltiples materiales",
+        "Aplicación móvil intuitiva para un control preciso",
+        "Excelente soporte técnico y actualizaciones constantes"
+      ],
+      "website": "https://www.laserpecker.net/",
+      "brandReviews": {
+        "summary": "LaserPecker ha sido ampliamente elogiada por su facilidad de uso, portabilidad y precisión en el grabado. Los usuarios destacan su versatilidad y la calidad del servicio postventa.",
+        "reviews": [
+          {
+            "name": "Cliente Amazon",
+            "rating": 5,
+            "content": "Un producto confiable y versátil. Es fácil de usar y compatible con una amplia gama de materiales. Parece robusto y duradero, espero que me acompañe por años."
+          },
+          {
+            "name": "Bob",
+            "rating": 5,
+            "content": "El LaserPecker LP4 graba casi cualquier cosa. Requiere algo de tiempo para ajustar los parámetros correctamente, pero una vez configurado, funciona a la perfección."
+          },
+          {
+            "name": "Stefano",
+            "rating": 5,
+            "content": "Increíble láser. Lo he probado en muchos materiales y siempre ofrece resultados impecables. Muy satisfecho con la compra."
+          },
+          {
+            "name": "Cliente de Amazon Francia",
+            "rating": 5,
+            "content": "Un producto en constante evolución, con un equipo de soporte excelente. Aunque la aplicación móvil necesita mejoras, el hardware es de gran calidad."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir LaserPecker?",
+        "content": "Con su diseño compacto, potente tecnología láser y facilidad de uso, LaserPecker es la solución perfecta para cualquier creador. Desde proyectos personales hasta aplicaciones profesionales, su versatilidad y calidad destacan en el mercado.",
+        "image": "/imagenes/laserpecker-opiniones.jpg",
+        "imageAlt": "Grabadora láser LaserPecker en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Puedo utilizar LaserPecker en diferentes tipos de materiales?",
+          "answer": "Sí, LaserPecker es compatible con una amplia gama de materiales, incluyendo madera, cuero, plástico, metal recubierto y más."
+        },
+        {
+          "question": "¿Es necesario conectarlo a un ordenador?",
+          "answer": "No, LaserPecker puede ser controlado fácilmente desde su aplicación móvil, aunque también es compatible con ordenadores para proyectos más avanzados."
+        },
+        {
+          "question": "¿Qué diferencia hay entre los modelos LP4 y LP5?",
+          "answer": "El modelo LP5 ofrece mayor potencia y características adicionales, como mejor precisión y opciones avanzadas de personalización del grabado."
+        }
+      ]
+    },
+    {
+      "id": "laser-tree",
+      "name": "Laser Tree",
+      "slug": "laser-tree",
+      "logo": "/imagenes/laser-tree-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Laser Tree se especializa en soluciones de láser de diodo de alta calidad, ofreciendo productos innovadores para el corte y grabado láser.",
+      "alternativeDescription": "Con un enfoque en tecnología láser avanzada, Laser Tree proporciona herramientas precisas y eficientes para el corte y grabado, ideales tanto para el sector industrial como para el DIY.",
+      "longDescription": "Desde su fundación en 2018, Laser Tree ha crecido rápidamente hasta convertirse en un proveedor líder de módulos láser de diodo, destacándose por su innovación y compromiso con la calidad. Su catálogo abarca desde láseres de diodo con micro FAC hasta módulos ópticos y drivers, ofreciendo soluciones para aplicaciones industriales, de iluminación y de procesamiento de materiales. Certificados con estándares internacionales como ISO9001, CE y FDA, sus productos garantizan fiabilidad y alto rendimiento.",
+      "contentBrand": "Laser Tree es sinónimo de precisión y eficiencia en la industria láser. Con más de una década de experiencia en diseño óptico y empaquetado de láseres, la marca se ha consolidado como un referente en el sector. Su compromiso con la innovación se traduce en productos versátiles que se adaptan a una amplia variedad de aplicaciones, desde el grabado de materiales delicados hasta el corte de alta potencia en sectores industriales.",
+      "features": [
+        "Tecnología de vanguardia en láseres de diodo",
+        "Alta precisión y eficiencia en corte y grabado",
+        "Compatible con software como LightBurn y GRBL",
+        "Certificaciones internacionales para mayor seguridad",
+        "Soporte técnico especializado y atención al cliente eficiente"
+      ],
+      "website": "https://lasertree.com/",
+      "brandReviews": {
+        "summary": "Laser Tree recibe elogios por la facilidad de instalación y la calidad de corte de sus módulos láser. Los usuarios destacan su rendimiento y la rápida atención al cliente.",
+        "reviews": [
+          {
+            "name": "Cliente Amazon",
+            "rating": 5,
+            "content": "Funciona perfectamente y cumple con lo prometido. Muy fácil de instalar y con un rendimiento impecable."
+          },
+          {
+            "name": "Daniela Filip",
+            "rating": 5,
+            "content": "El corte es limpio y rápido, justo lo que esperaba. Estoy muy satisfecha con la compra."
+          },
+          {
+            "name": "Manuel Pérez",
+            "rating": 4,
+            "content": "Buen desempeño, aunque hace algo de ruido, es soportable. Satisfecho con la relación calidad-precio."
+          },
+          {
+            "name": "Abegines",
+            "rating": 5,
+            "content": "Por fin un láser de diodo que corta de verdad. Instalación sencilla y resultados excelentes con LightBurn."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Laser Tree?",
+        "content": "Laser Tree es la opción ideal para quienes buscan soluciones de grabado y corte láser de alta precisión. Su combinación de tecnología avanzada, facilidad de uso y servicio de atención al cliente de primera hacen que sus productos sean perfectos tanto para principiantes como para profesionales.",
+        "image": "/imagenes/laser-tree-opiniones.jpg",
+        "imageAlt": "Módulo láser Laser Tree en funcionamiento"
+      },
+      "faqs": [
+        {
+          "question": "¿Puedo utilizar los módulos de Laser Tree con cualquier máquina de grabado?",
+          "answer": "Sí, los módulos son compatibles con estructuras de máquinas populares como Eleksmaker y software como LightBurn y LaserGRBL."
+        },
+        {
+          "question": "¿Qué materiales puedo cortar con Laser Tree?",
+          "answer": "Puedes cortar y grabar materiales como madera, acrílico, cartón, cuero y algunos plásticos, ajustando potencia y velocidad adecuadamente."
+        },
+        {
+          "question": "¿Laser Tree ofrece soporte técnico?",
+          "answer": "Sí, el equipo de soporte está disponible para resolver dudas técnicas y ayudar en la instalación y configuración."
+        }
+      ]
+    },
+    {
+      "id": "ikier",
+      "name": "Ikier",
+      "slug": "ikier",
+      "logo": "/imagenes/ikier-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Ikier revoluciona la industria del grabado láser con tecnología inteligente y facilidad de uso para todos.",
+      "alternativeDescription": "Ikier, la marca premium de Atomstack, ofrece grabadoras láser inteligentes que combinan tecnología avanzada, diseño modular y una experiencia de usuario intuitiva.",
+      "longDescription": "Ikier, una marca de alta gama respaldada por Atomstack, representa la evolución del grabado láser hacia la era 2.0. Con su tecnología de diodos semiconductores de última generación, Ikier ha desarrollado productos que destacan por su precisión, potencia y facilidad de uso. Sus innovaciones incluyen el autoenfoque láser, el corte automático con ajuste de profundidad y la reanudación del grabado tras una interrupción. Con un enfoque en el diseño intuitivo y el montaje rápido, Ikier es ideal tanto para entusiastas del bricolaje como para pequeñas empresas y sectores educativos.",
+      "contentBrand": "Ikier es sinónimo de innovación y accesibilidad en el mundo del grabado láser. Con un enfoque en la modularidad y la inteligencia artificial, sus productos permiten a cualquier persona, desde principiantes hasta profesionales, crear proyectos con facilidad y precisión.",
+      "features": [
+        "Tecnología de autoenfoque y ajuste automático de profundidad",
+        "Montaje rápido en solo 10 minutos con diseño modular",
+        "Alta precisión con rieles lineales de deslizamiento",
+        "Compatible con múltiples materiales y software como LightBurn",
+        "Atención al cliente eficiente y soporte global"
+      ],
+      "website": "https://eu.ikier.com/",
+      "brandReviews": {
+        "summary": "Los usuarios destacan la calidad de construcción, el excelente soporte técnico y la facilidad de uso de las grabadoras Ikier, recomendándolas ampliamente por su rendimiento y diseño.",
+        "reviews": [
+          {
+            "name": "Stephan",
+            "rating": 5,
+            "content": "Compré el láser para mi pequeño negocio y ha superado mis expectativas. Tuve un pequeño problema con una pieza, pero el servicio de atención me la envió rápidamente sin coste. ¡Muy recomendable!"
+          },
+          {
+            "name": "Heinz S.",
+            "rating": 5,
+            "content": "Estoy realmente satisfecho con el soporte de Ikier. Responden rápido y con soluciones claras. La máquina es robusta y de alta calidad. ¡Una compra excelente!"
+          },
+          {
+            "name": "4er Team",
+            "rating": 5,
+            "content": "Un gran dispositivo tanto para grabar como para cortar. Fácil de montar y utilizar, incluso para un principiante como yo. Su sistema de seguridad es impresionante."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Ikier?",
+        "content": "Ikier ha redefinido el concepto de las grabadoras láser con su diseño inteligente y facilidad de uso. Su combinación de tecnología avanzada y un enfoque accesible hacen que la marca sea perfecta tanto para profesionales como para entusiastas del bricolaje.",
+        "image": "/imagenes/ikier-maquina-laser.jpg",
+        "imageAlt": "Máquina de grabado láser Ikier en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Cuánto tiempo se tarda en montar una máquina Ikier?",
+          "answer": "Gracias a su diseño modular, la instalación puede completarse en aproximadamente 10 minutos, incluso sin experiencia previa."
+        },
+        {
+          "question": "¿Qué tipo de materiales puede grabar y cortar Ikier?",
+          "answer": "Las máquinas Ikier pueden trabajar con madera, acrílico, cuero, cartón y otros materiales con gran precisión."
+        },
+        {
+          "question": "¿Ofrecen soporte técnico en mi país?",
+          "answer": "Sí, Ikier cuenta con almacenes y centros de soporte en varios países para garantizar un servicio rápido y eficiente."
+        }
+      ]
+    },
+    {
+      "id": "fonland",
+      "name": "Fonland",
+      "slug": "fonland",
+      "logo": "/imagenes/fonland-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Fonland ofrece soluciones ópticas avanzadas para aplicaciones industriales, médicas y científicas.",
+      "alternativeDescription": "Fonland se especializa en componentes ópticos de precisión, sistemas láser y dispositivos electro-ópticos con una presencia global en múltiples sectores.",
+      "longDescription": "Fonland, una marca de Fenglan (Wuhan) Photoelectric Technology Co., Ltd, cuenta con más de 20 años de experiencia en el desarrollo y fabricación de componentes ópticos de alta precisión. Sus soluciones abarcan desde lentes láser y sistemas de corte hasta equipos de refrigeración para aplicaciones industriales, médicas, científicas y militares. Con presencia en mercados de Norteamérica, Europa y Asia, Fonland garantiza productos de alta calidad certificados bajo estrictos estándares internacionales.",
+      "contentBrand": "Fonland es sinónimo de innovación y precisión en el ámbito de la optoelectrónica. Desde la producción de lentes láser hasta soluciones completas para sistemas de corte, sus productos están diseñados para satisfacer las más exigentes demandas del mercado global.",
+      "features": [
+        "Más de 20 años de experiencia en optoelectrónica",
+        "Amplia gama de productos: lentes láser, máquinas de corte y equipos CNC",
+        "Presencia global en más de 15 países",
+        "Certificaciones de calidad rigurosas para garantizar precisión",
+        "Atención al cliente profesional y asesoramiento técnico especializado"
+      ],
+      "website": "https://fonlandlaser.com/",
+      "brandReviews": {
+        "summary": "Los usuarios destacan la facilidad de uso, la precisión en el grabado y la excelente atención al cliente de Fonland, recomendando sus productos para diversos proyectos de grabado y corte.",
+        "reviews": [
+          {
+            "name": "David Kim",
+            "rating": 5,
+            "content": "Un producto excelente, muy recomendable. Cumple perfectamente con mis expectativas y el rendimiento es impecable."
+          },
+          {
+            "name": "MartaL",
+            "rating": 4,
+            "content": "Perdí el software que venía con la máquina y el equipo de soporte me ayudó rápidamente. La atención al cliente es excelente."
+          },
+          {
+            "name": "Cliente Amazon",
+            "rating": 5,
+            "content": "Perfecto para grabar llaveros de madera y placas para mascotas. Fácil de usar y configurar. El soporte es muy amable y resuelve cualquier duda."
+          },
+          {
+            "name": "A Funerária Santos, Lda.",
+            "rating": 5,
+            "content": "El producto superó mis expectativas, la calidad es impresionante y el rendimiento es excelente."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Fonland?",
+        "content": "Fonland se distingue por su compromiso con la calidad y la innovación en el ámbito de la tecnología láser. Sus productos son ideales para aplicaciones industriales, médicas y científicas, proporcionando soluciones eficientes y precisas.",
+        "image": "/imagenes/fonland-producto.jpg",
+        "imageAlt": "Máquina de grabado láser Fonland en acción"
+      },
+      "faqs": [
+        {
+          "question": "¿Cuáles son las principales aplicaciones de los productos Fonland?",
+          "answer": "Los productos Fonland se utilizan en sectores como la industria, la medicina, la investigación científica y la industria aeroespacial."
+        },
+        {
+          "question": "¿Fonland ofrece soporte técnico postventa?",
+          "answer": "Sí, la empresa cuenta con un equipo profesional que ofrece asistencia técnica y resolución de problemas en todo el mundo."
+        },
+        {
+          "question": "¿Dónde se pueden adquirir los productos Fonland?",
+          "answer": "Los productos Fonland están disponibles en su tienda online oficial y a través de distribuidores en más de 15 países."
+        }
+      ]
+    },
+    {
+      "id": "creatorally",
+      "name": "Creatorally",
+      "slug": "creatorally",
+      "logo": "/imagenes/creatorally-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Creatorally es tu aliado perfecto para liberar tu creatividad con materiales de alta calidad, sostenibles y adaptados a diversas aplicaciones.",
+      "alternativeDescription": "Creatorally no es solo un proveedor de materiales; es una comunidad que inspira, apoya y empodera a los creadores en su camino creativo.",
+      "longDescription": "En Creatorally, creemos que la creatividad no tiene límites. Nos dedicamos a proporcionar materiales de primera calidad que no solo cumplen con tus necesidades creativas, sino que también respetan el medio ambiente. Ya sea que utilices láseres de diodo, CO2 o fibra, tenemos la solución perfecta para ti. Ofrecemos desde madera contrachapada hasta acero inoxidable, garantizando calidad y versatilidad en cada proyecto. Nuestra misión es clara: ayudar a cada creador a convertir sus ideas en realidad, brindando no solo productos, sino también inspiración y orientación.",
+      "contentBrand": "Creatorally va más allá de la simple venta de materiales; ofrecemos un ecosistema completo de recursos, tutoriales e ideas para inspirarte en cada paso de tu viaje creativo.",
+      "features": [
+        "Amplia selección de materiales premium para grabado y corte",
+        "Compromiso con la sostenibilidad en cada producto",
+        "Soporte y asesoramiento experto para creadores de todos los niveles",
+        "Compatibilidad con diferentes tipos de equipos láser",
+        "Inspiración y comunidad para compartir ideas y experiencias"
+      ],
+      "website": "https://creatorally.com/",
+      "brandReviews": {
+        "summary": "Los clientes destacan la calidad de los materiales, la facilidad de uso y el excelente servicio de atención al cliente de Creatorally, recomendando sus productos para cualquier tipo de proyecto creativo.",
+        "reviews": [
+          {
+            "name": "Ida",
+            "rating": 5,
+            "content": "Un producto excelente, llegó en perfectas condiciones y superó mis expectativas. Totalmente recomendable."
+          },
+          {
+            "name": "WBWR",
+            "rating": 5,
+            "content": "Muy satisfecho con la facilidad de uso. Los materiales son de alta calidad y se adaptan perfectamente a mis necesidades."
+          },
+          {
+            "name": "Caroline Grolleau Clément",
+            "rating": 5,
+            "content": "La impresora es maravillosa, los resultados son de excelente calidad. La única pega es que el manual no está en francés."
+          },
+          {
+            "name": "Gérard",
+            "rating": 4,
+            "content": "Buena relación calidad-precio. Fácil de configurar y usar, aunque no esperes milagros en grabados muy complejos."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Creatorally?",
+        "content": "Creatorally ofrece una experiencia completa para los creadores, desde materiales de alta calidad hasta orientación especializada, permitiéndote explorar nuevas ideas con confianza.",
+        "image": "/imagenes/creatorally-producto.jpg",
+        "imageAlt": "Materiales de Creatorally en uso en un taller creativo"
+      },
+      "faqs": [
+        {
+          "question": "¿Qué tipo de materiales ofrece Creatorally?",
+          "answer": "Creatorally ofrece una amplia gama de materiales como madera contrachapada, acrílicos, plásticos ABS y acero inoxidable, todos compatibles con diferentes tipos de láser."
+        },
+        {
+          "question": "¿Creatorally ofrece contenido educativo para sus productos?",
+          "answer": "Sí, disponemos de tutoriales y guías para ayudar a los creadores a sacar el máximo provecho de nuestros materiales."
+        },
+        {
+          "question": "¿Dónde puedo comprar los productos de Creatorally?",
+          "answer": "Puedes adquirir nuestros productos a través de nuestra tienda en línea y distribuidores autorizados en varios países."
+        }
+      ]
+    },
+    {
+      "id": "creality",
+      "name": "Creality",
+      "slug": "creality",
+      "logo": "/imagenes/creality-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Creality es líder en impresión 3D, brindando tecnología accesible e innovadora para entusiastas y profesionales de todo el mundo.",
+      "alternativeDescription": "Desde su fundación en 2014, Creality ha revolucionado la industria de la impresión 3D con productos de alta calidad y fácil accesibilidad.",
+      "longDescription": "Creality, fundada en 2014, se ha convertido en un referente mundial en impresión 3D, ofreciendo una amplia gama de impresoras de tecnología FDM y resina, escáneres 3D y materiales. Con más de 3.5 millones de usuarios en 192 países, la empresa apuesta por la innovación y la facilidad de uso, desarrollando soluciones para entusiastas del bricolaje, educadores y profesionales. Su misión es llevar la impresión 3D a millones de hogares, democratizando la tecnología con productos accesibles y de alto rendimiento.",
+      "contentBrand": "Creality combina ingeniería de vanguardia con facilidad de uso, ofreciendo productos que permiten a los usuarios dar vida a sus ideas con precisión y eficiencia.",
+      "features": [
+        "Impresoras 3D de alta precisión con tecnología FDM y resina",
+        "Fácil montaje y uso para principiantes y profesionales",
+        "Amplia comunidad de soporte y recursos educativos",
+        "Compatible con una variedad de materiales de impresión",
+        "Innovaciones constantes en hardware y software"
+      ],
+      "website": "https://www.creality.com/",
+      "brandReviews": {
+        "summary": "Los usuarios elogian la facilidad de uso, la calidad de impresión y la relación calidad-precio de las impresoras 3D de Creality, destacando su rendimiento fiable y su versatilidad.",
+        "reviews": [
+          {
+            "name": "Pedro Alfaro",
+            "rating": 5,
+            "content": "La mejor compra del año. La impresora es fácil de montar, con acabados impecables y auto nivelación. ¡Magnífica!"
+          },
+          {
+            "name": "Chops",
+            "rating": 5,
+            "content": "Funciona muy bien y es fácil de usar. La recomiendo para todo tipo de proyectos de impresión 3D."
+          },
+          {
+            "name": "Samuel",
+            "rating": 4,
+            "content": "Impresora muy buena, con una calidad de impresión excelente. Perfecta para iniciarse en la impresión 3D."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Creality?",
+        "content": "Creality ofrece impresoras 3D de alta calidad a precios accesibles, con una comunidad global activa y recursos educativos para mejorar tu experiencia de impresión.",
+        "image": "/imagenes/creality-producto.jpg",
+        "imageAlt": "Impresora 3D Creality en funcionamiento"
+      },
+      "faqs": [
+        {
+          "question": "¿Es fácil montar una impresora Creality?",
+          "answer": "Sí, las impresoras Creality están diseñadas para un montaje sencillo, con instrucciones claras y soporte en línea para cualquier duda."
+        },
+        {
+          "question": "¿Qué software se recomienda para las impresoras Creality?",
+          "answer": "Creality recomienda software como Creality Slicer, Cura y Simplify3D para optimizar tus impresiones."
+        },
+        {
+          "question": "¿Dónde puedo comprar repuestos para mi impresora Creality?",
+          "answer": "Puedes encontrar repuestos en la tienda oficial de Creality y distribuidores autorizados en todo el mundo."
+        }
+      ]
+    },
+    {
+      "id": "commarker",
+      "name": "ComMarker",
+      "slug": "commarker",
+      "logo": "/imagenes/commarker-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "ComMarker ofrece grabadores láser compactos y accesibles, diseñados para potenciar la creatividad en todos los niveles.",
+      "alternativeDescription": "Fundada en 2017, ComMarker se especializa en grabadores láser de fácil uso, ideales para personalización y fabricación con alta precisión.",
+      "longDescription": "ComMarker nació con la visión de simplificar la creatividad a través de la tecnología láser. Desde su fundación en 2017, se ha convertido en una marca de referencia para aficionados y profesionales que buscan equipos compactos, potentes y accesibles. Su misión es llevar la personalización al siguiente nivel, ofreciendo productos innovadores que combinan facilidad de uso con resultados de alta calidad.",
+      "contentBrand": "ComMarker se compromete a hacer la creación más accesible mediante grabadores láser intuitivos y potentes, ideales para proyectos personalizados.",
+      "features": [
+        "Grabadores láser de alta precisión y fácil manejo",
+        "Modelos compactos y accesibles para todos los niveles",
+        "Compatible con múltiples materiales como madera, metal y plástico",
+        "Innovación continua para mejorar la experiencia del usuario",
+        "Soporte técnico dedicado y recursos educativos"
+      ],
+      "website": "https://commarker.com/",
+      "brandReviews": {
+        "summary": "Los usuarios destacan la facilidad de uso, la precisión de los grabados y la relación calidad-precio de las máquinas ComMarker.",
+        "reviews": [
+          {
+            "name": "Cliente Amazon",
+            "rating": 5,
+            "content": "Calidad, buen precio y embalaje perfecto. La potencia del láser es excelente, aunque el software EZCAD2 solo está en inglés."
+          },
+          {
+            "name": "Luis Carrascosa",
+            "rating": 5,
+            "content": "Máquina completa y perfecta. Precisa, potente y con todas las funciones necesarias para cualquier proyecto."
+          },
+          {
+            "name": "Mr. Cloud",
+            "rating": 5,
+            "content": "¡Increíble equipo! Con un poco de paciencia se logran resultados impresionantes."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir ComMarker?",
+        "content": "ComMarker ofrece grabadores láser versátiles y accesibles, ideales tanto para aficionados como para profesionales que buscan resultados de alta calidad.",
+        "image": "/imagenes/commarker-producto.jpg",
+        "imageAlt": "Grabador láser ComMarker en funcionamiento"
+      },
+      "faqs": [
+        {
+          "question": "¿Es fácil de usar un grabador láser ComMarker?",
+          "answer": "Sí, los grabadores ComMarker están diseñados para ser intuitivos y fáciles de configurar, con instrucciones detalladas incluidas."
+        },
+        {
+          "question": "¿Qué materiales se pueden grabar con ComMarker?",
+          "answer": "Puedes grabar sobre madera, plástico, metal y cuero, logrando resultados detallados y de alta calidad."
+        },
+        {
+          "question": "¿El software EZCAD2 está disponible en español?",
+          "answer": "Actualmente, EZCAD2 solo está disponible en inglés, pero cuenta con guías detalladas para su uso."
+        }
+      ]
+    },
+    {
+      "id": "atomstack",
+      "name": "Atomstack",
+      "slug": "atomstack",
+      "logo": "/imagenes/atomstack-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Atomstack es una marca líder en grabadores láser de diodo, ofreciendo herramientas innovadoras para la fabricación digital y la personalización.",
+      "alternativeDescription": "Atomstack desarrolla grabadores láser de diodo fáciles de usar pero altamente profesionales, acercando la tecnología láser a todos los usuarios.",
+      "longDescription": "Atomstack nació con la misión de eliminar las barreras de la fabricación digital, proporcionando herramientas de grabado láser intuitivas y profesionales. Fundada por ingenieros apasionados por la innovación, la marca se ha consolidado como referente en el sector gracias a su compromiso con la calidad, la facilidad de uso y el desarrollo tecnológico continuo. Atomstack busca democratizar el acceso a la tecnología láser, permitiendo que cualquier persona pueda materializar sus ideas creativas sin importar su nivel de experiencia.",
+      "contentBrand": "Atomstack se especializa en ofrecer soluciones de grabado láser de diodo de alta precisión, ideales tanto para principiantes como para profesionales.",
+      "features": [
+        "Grabadores láser de diodo de alta precisión y calidad",
+        "Fácil montaje y configuración con guías detalladas",
+        "Compatibilidad con múltiples materiales como madera, metal y acrílico",
+        "Ecosistema de accesorios y tutoriales disponibles",
+        "Atención al cliente eficiente y servicio postventa confiable"
+      ],
+      "website": "https://es.atomstack.net/",
+      "brandReviews": {
+        "summary": "Los usuarios destacan la facilidad de montaje, la calidad de los grabados y la versatilidad de los equipos Atomstack.",
+        "reviews": [
+          {
+            "name": "Joan Olle",
+            "rating": 5,
+            "content": "Excelente grabador láser, muy versátil para madera, cuero y metacrilato. Estoy encantado con los resultados."
+          },
+          {
+            "name": "Trina E",
+            "rating": 5,
+            "content": "Fácil de ensamblar y con un láser muy preciso. Un producto excelente para iniciarse en el grabado láser."
+          },
+          {
+            "name": "Avery",
+            "rating": 5,
+            "content": "Producto de gran calidad, fácil de usar y con resultados de grabado excepcionales en madera."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Atomstack?",
+        "content": "Atomstack ofrece grabadores láser potentes y accesibles que permiten personalizar una amplia variedad de materiales con facilidad y precisión.",
+        "image": "/imagenes/atomstack-producto.jpg",
+        "imageAlt": "Grabador láser Atomstack en funcionamiento"
+      },
+      "faqs": [
+        {
+          "question": "¿Es fácil montar un grabador láser Atomstack?",
+          "answer": "Sí, los grabadores Atomstack están diseñados para un montaje rápido y sencillo con instrucciones claras y herramientas incluidas."
+        },
+        {
+          "question": "¿Qué materiales se pueden grabar con Atomstack?",
+          "answer": "Puedes grabar y cortar madera, acrílico, cuero, metales anodizados y más, con gran precisión."
+        },
+        {
+          "question": "¿Atomstack ofrece soporte técnico?",
+          "answer": "Sí, Atomstack cuenta con un equipo de soporte disponible por correo electrónico para resolver cualquier duda o problema técnico."
+        }
+      ]
+    },
+    {
+      "id": "atezr",
+      "name": "Atezr",
+      "slug": "atezr",
+      "logo": "/imagenes/atezr-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Atezr ofrece grabadoras láser diseñadas para combinar potencia y facilidad de uso, ideales para usuarios creativos y profesionales.",
+      "alternativeDescription": "Descubre Atezr, una marca de grabadoras láser que proporciona soluciones accesibles y versátiles para todo tipo de proyectos de personalización.",
+      "longDescription": "Fundada en 2017, Atezr se ha posicionado como una marca que busca potenciar la creatividad a través de grabadoras láser de alto rendimiento y fácil manejo. Con un enfoque en la accesibilidad y la innovación, Atezr ofrece soluciones para entusiastas del bricolaje, pequeñas empresas y profesionales de la personalización. Sus equipos están diseñados para garantizar una experiencia fluida desde el montaje hasta la ejecución de proyectos, aunque algunos usuarios han señalado áreas de mejora en su servicio postventa.",
+      "contentBrand": "Atezr desarrolla grabadoras láser versátiles con un equilibrio entre rendimiento y facilidad de uso.",
+      "features": [
+        "Diseño robusto con materiales de calidad",
+        "Facilidad de montaje y configuración",
+        "Compatible con diversos materiales como madera, cuero y metales ligeros",
+        "Guías de usuario detalladas en varios idiomas",
+        "Pantalla con interfaz en inglés, chino y japonés"
+      ],
+      "website": "https://www.atezr.es/",
+      "brandReviews": {
+        "summary": "Los usuarios destacan la facilidad de montaje y el rendimiento de los grabadores láser Atezr, aunque algunos reportan problemas de soporte técnico.",
+        "reviews": [
+          {
+            "name": "Joan Bricolaje Listo",
+            "rating": 5,
+            "content": "La grabadora funciona bien, pero el servicio de atención al cliente deja que desear. La estructura es resistente, aunque la tapa del módulo láser no tiene la mejor calidad."
+          },
+          {
+            "name": "Liudmila",
+            "rating": 5,
+            "content": "Montaje sencillo y bien explicado en la guía. Sin embargo, la pantalla solo está disponible en tres idiomas."
+          },
+          {
+            "name": "Cliente Amazon",
+            "rating": 5,
+            "content": "Excelente máquina para empezar en el mundo del grabado láser. Fácil de montar y materiales de buena calidad."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Atezr?",
+        "content": "Atezr es una opción ideal para quienes buscan una grabadora láser fácil de usar y potente para proyectos creativos.",
+        "image": "/imagenes/atezr-producto.jpg",
+        "imageAlt": "Grabadora láser Atezr en funcionamiento"
+      },
+      "faqs": [
+        {
+          "question": "¿Es fácil de montar una grabadora láser Atezr?",
+          "answer": "Sí, las grabadoras Atezr incluyen instrucciones claras y están diseñadas para un montaje rápido y sin complicaciones."
+        },
+        {
+          "question": "¿Qué materiales se pueden trabajar con Atezr?",
+          "answer": "Se pueden grabar y cortar materiales como madera, cuero y ciertos metales ligeros."
+        },
+        {
+          "question": "¿Atezr ofrece soporte técnico?",
+          "answer": "El soporte técnico puede mejorar, según algunos usuarios, pero la marca proporciona guías detalladas para facilitar la resolución de problemas."
+        }
+      ]
+    },
+    {
+      "id": "annoy-tools",
+      "name": "Annoy Tools",
+      "slug": "annoy-tools",
+      "logo": "/imagenes/annoy-tools-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Annoy Tools ofrece piezas de maquinaria para carpintería de alta calidad, diseñadas para facilitar la creatividad y precisión en cada proyecto.",
+      "alternativeDescription": "Descubre Annoy Tools, tu aliado ideal en el mundo de la carpintería con una amplia gama de herramientas y componentes de calidad profesional.",
+      "longDescription": "Desde su fundación en 2015, Annoy Tools se ha dedicado a proporcionar herramientas y componentes de maquinaria para carpintería de alto rendimiento. Con un enfoque en la calidad, la durabilidad y la innovación, la marca ofrece productos esenciales para profesionales y entusiastas del bricolaje. Su catálogo incluye desde módulos láser de alto rendimiento hasta sistemas CNC versátiles, garantizando soluciones óptimas para proyectos de cualquier escala.",
+      "contentBrand": "Annoy Tools es sinónimo de precisión, durabilidad y rendimiento para los amantes de la carpintería y la personalización.",
+      "features": [
+        "Amplia gama de herramientas y componentes para carpintería",
+        "Módulos láser de alta precisión con tecnología avanzada",
+        "Fácil instalación y compatibilidad con diversos equipos CNC",
+        "Soporte técnico confiable y atención personalizada",
+        "Excelente relación calidad-precio en todos los productos"
+      ],
+      "website": "https://annoytools.es.aliexpress.com/",
+      "brandReviews": {
+        "summary": "Los clientes destacan la calidad de los productos Annoy Tools, resaltando su rendimiento y la buena atención al cliente, aunque algunos mencionan la necesidad de mejorar la documentación de instalación.",
+        "reviews": [
+          {
+            "name": "Raul",
+            "rating": 5,
+            "content": "Excelente cortadora láser, ha superado mis expectativas. Después de más de 100 cortes sigue funcionando de maravilla."
+          },
+          {
+            "name": "Acr",
+            "rating": 4,
+            "content": "El montaje lleva su tiempo, pero una vez instalado funciona perfectamente. La atención al cliente ha sido excelente."
+          },
+          {
+            "name": "Edgaar1",
+            "rating": 5,
+            "content": "Buena máquina, aunque tuve problemas iniciales de conexión al PC. Finalmente, todo solucionado con el soporte técnico."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Annoy Tools?",
+        "content": "Annoy Tools es la opción perfecta para quienes buscan herramientas confiables y de alta precisión para proyectos de carpintería y grabado láser.",
+        "image": "/imagenes/annoy-tools-product.jpg",
+        "imageAlt": "Cortadora láser Annoy Tools en funcionamiento"
+      },
+      "faqs": [
+        {
+          "question": "¿Es fácil instalar las herramientas de Annoy Tools?",
+          "answer": "Sí, los productos incluyen instrucciones detalladas, aunque algunos usuarios recomiendan buscar tutoriales adicionales para optimizar el uso."
+        },
+        {
+          "question": "¿Qué tipos de materiales pueden trabajarse con los módulos láser?",
+          "answer": "Pueden cortar y grabar materiales como madera, acrílico, cuero y otros materiales compatibles con láser de diodo."
+        },
+        {
+          "question": "¿Qué hacer si la máquina presenta problemas de conexión?",
+          "answer": "Revisar las conexiones de tierra y seguir las recomendaciones del soporte técnico de Annoy Tools, que responde de manera eficiente a consultas."
+        }
+      ]
+    },
+    {
+      "id": "airminti",
+      "name": "Airminti",
+      "slug": "airminti",
+      "logo": "/imagenes/airminti-logo.jpg",
+      "publishDate": "2024-01-13",
+      "description": "Airminti ofrece una amplia variedad de productos prácticos y funcionales para el hogar, el automóvil y más.",
+      "alternativeDescription": "Descubre la versatilidad de Airminti, una marca de Amazon que proporciona soluciones prácticas para el día a día.",
+      "longDescription": "Airminti es una marca reconocida en Amazon que ofrece una extensa gama de productos diseñados para mejorar la organización, la seguridad y la comodidad en el hogar y el automóvil. Desde herramientas multiusos hasta accesorios de almacenamiento y protección, Airminti se destaca por su calidad accesible y facilidad de uso. Sus productos están diseñados para adaptarse a las necesidades cotidianas de los consumidores, brindando soluciones innovadoras con una excelente relación calidad-precio.",
+      "contentBrand": "Airminti es sinónimo de practicidad, versatilidad y accesibilidad, con una amplia gama de productos que facilitan la vida cotidiana.",
+      "features": [
+        "Gran variedad de productos para el hogar, automóvil y organización",
+        "Materiales de alta calidad con diseño funcional",
+        "Fácil instalación y uso intuitivo",
+        "Excelente relación calidad-precio",
+        "Respaldo y garantía de Amazon"
+      ],
+      "website": "https://www.amazon.es/stores/Airminti/",
+      "brandReviews": {
+        "summary": "Los clientes valoran positivamente la calidad y versatilidad de los productos de Airminti, destacando su facilidad de uso y diseño práctico, aunque algunos mencionan detalles menores de acabado.",
+        "reviews": [
+          {
+            "name": "Llorenç",
+            "rating": 5,
+            "content": "Herramienta versátil y precisa, ideal para maquetismo y trabajos finos. La duración de la batería es adecuada y permite su uso mientras se carga."
+          },
+          {
+            "name": "Auro Y.",
+            "rating": 5,
+            "content": "Producto sencillo pero potente, fácil de usar para grabar vidrio. La caja de almacenamiento y los accesorios incluidos son un gran plus."
+          },
+          {
+            "name": "Kepa",
+            "rating": 4,
+            "content": "Buen aparato para trabajos detallados. La batería dura media hora a máxima potencia y se carga rápido. Hace poco ruido."
+          }
+        ]
+      },
+      "twoColumnSection": {
+        "title": "¿Por qué elegir Airminti?",
+        "content": "Airminti ofrece soluciones prácticas para el día a día con productos funcionales, accesibles y fáciles de usar.",
+        "image": "/imagenes/airminti-product.jpg",
+        "imageAlt": "Productos Airminti para el hogar y automóvil"
+      },
+      "faqs": [
+        {
+          "question": "¿Son los productos Airminti fáciles de usar?",
+          "answer": "Sí, todos los productos están diseñados para ser intuitivos y de fácil instalación, con guías claras para su uso."
+        },
+        {
+          "question": "¿Los productos de Airminti tienen garantía?",
+          "answer": "Sí, cuentan con la garantía de Amazon, lo que brinda confianza y respaldo en cada compra."
+        },
+        {
+          "question": "¿Airminti ofrece repuestos o accesorios adicionales?",
+          "answer": "Algunos productos incluyen accesorios adicionales y estuches de almacenamiento, pero es recomendable verificar en cada artículo específico."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+---
+import { SEO } from 'astro-seo';
+import data from '../data/data.json';
+
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+  type?: string;
+  image?: string;
+  article?: boolean;
+}
+
+const { 
+  title, 
+  description, 
+  noindex = false,
+  type = 'website',
+  image = '/og-image.jpg',
+  article = false 
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, data.site.baseUrl);
+---
+
+<SEO
+  title={`${title} | ${data.site.title}`}
+  description={description}
+  canonical={canonicalURL.toString()}
+  noindex={noindex}
+  nofollow={noindex}
+  openGraph={{
+    basic: {
+      title,
+      type,
+      image,
+      url: canonicalURL.toString(),
+    },
+    optional: {
+      description,
+      locale: 'es_ES',
+      siteName: data.site.title,
+    },
+    article: article ? {
+      authors: ['Laser Engraver Guide'],
+      publishedTime: new Date().toISOString(),
+    } : undefined,
+  }}
+  twitter={{
+    card: 'summary_large_image',
+    site: '@laserengraverguide',
+    creator: '@laserengraverguide',
+  }}
+  extend={{
+    meta: [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'generator', content: Astro.generator },
+      { name: 'application-name', content: data.site.title },
+      { name: 'apple-mobile-web-app-title', content: data.site.title },
+      { name: 'theme-color', content: '#0ea5e9' },
+    ],
+    link: [
+      { rel: 'icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+    ],
+  }}
+/>

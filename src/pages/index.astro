@@ -1,0 +1,223 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import BlogCard from '../components/BlogCard.astro';
+import BrandCard from '../components/BrandCard.astro';
+import FaqSection from '../components/faq/FaqSection.astro';
+import { 
+  getPublishedProducts, 
+  getPublishedArticles, 
+  getBrandsWithProductCount,
+  getAuthorById 
+} from '../utils/dataProcessing';
+import data from '../data';
+
+// Get processed data
+const publishedProducts = getPublishedProducts();
+const publishedArticles = getPublishedArticles(3);
+const brandsWithProductCount = getBrandsWithProductCount(3);
+
+// Process articles with author data
+const articlesWithAuthors = publishedArticles.map(article => {
+  const author = getAuthorById(article.author);
+  return {
+    ...article,
+    author: author ? {
+      name: author.name,
+      avatar: author.avatar
+    } : {
+      name: 'Unknown Author',
+      avatar: '/images/default-avatar.jpg'
+    }
+  };
+});
+
+// FAQ data
+const homeFaqs = {
+  title: "Preguntas Frecuentes sobre Grabadores Láser",
+  questions: [
+    {
+      question: "¿Qué es un grabador láser?",
+      answer: "Un grabador láser es una máquina que utiliza tecnología láser para grabar o cortar materiales con alta precisión. Es ideal para crear diseños personalizados en madera, acrílico, cuero y otros materiales."
+    },
+    {
+      question: "¿Qué puedo hacer con un grabador láser?",
+      answer: "Con un grabador láser puedes crear señalética, personalizar regalos, fabricar joyería, hacer decoración para el hogar, crear productos personalizados para vender, y mucho más."
+    },
+    {
+      question: "¿Qué debo considerar al comprar un grabador láser?",
+      answer: "Los factores principales son: potencia del láser, área de trabajo, materiales compatibles, software incluido, medidas de seguridad y tu presupuesto."
+    }
+  ]
+};
+
+// Schema data
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Laser Engraver Guide",
+  "url": "https://laserengraverguide.com",
+  "description": "Guía experta de grabadores láser: comparativas, reviews y consejos para elegir el mejor grabador láser.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://laserengraverguide.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+---
+
+<Layout>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-primary-600 to-primary-800">
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-600/90 to-primary-800/90"></div>
+      <div class="absolute inset-0 bg-[url('/images/hero-pattern.svg')] opacity-10"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+          Encuentra tu <span class="text-primary-200">Grabador Láser</span> Ideal
+        </h1>
+        <p class="mt-6 max-w-2xl mx-auto text-xl text-primary-100">
+          Reviews expertos, comparativas y guías para ayudarte a elegir el mejor grabador láser para tus necesidades.
+        </p>
+        <div class="mt-10 flex justify-center gap-4">
+          <a
+            href="/categories"
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-primary-700 bg-white hover:bg-primary-50 transition-colors duration-300"
+          >
+            Ver Categorías
+          </a>
+          <a
+            href="/blog"
+            class="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-primary-700/50 transition-colors duration-300"
+          >
+            Leer Blog
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          Grabadores Láser Destacados
+        </h2>
+        <p class="mt-4 text-xl text-gray-600">
+          Descubre nuestra selección de los mejores grabadores láser del mercado
+        </p>
+      </header>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {publishedProducts.map((product) => (
+          <ProductCard {...product} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Brands -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-gray-900">
+          Marcas Destacadas
+        </h2>
+        <p class="mt-4 text-xl text-gray-600">
+          Conoce los principales fabricantes de grabadores láser
+        </p>
+      </header>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {brandsWithProductCount.map((brand) => (
+          <BrandCard {...brand} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-gray-900">
+          Explora por Categorías
+        </h2>
+        <p class="mt-4 text-xl text-gray-600">
+          Encuentra el grabador láser perfecto para tus necesidades
+        </p>
+      </header>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {data.categories.map((category) => (
+          <CategoryCard {...category} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Blog Posts -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-gray-900">
+          Últimos Artículos
+        </h2>
+        <p class="mt-4 text-xl text-gray-600">
+          Mantente al día con las últimas tendencias y consejos en grabado láser
+        </p>
+      </header>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {articlesWithAuthors.map((article) => (
+          <BlogCard {...article} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <FaqSection {...homeFaqs} />
+      <div class="text-center mt-8">
+        <a
+          href="/faqs"
+          class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary-600 hover:bg-primary-700 transition-colors"
+        >
+          Ver Todas las Preguntas Frecuentes
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-primary-600">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-extrabold text-white mb-4">
+          ¿Listo para empezar con el grabado láser?
+        </h2>
+        <p class="text-xl text-primary-100 mb-8">
+          Descubre nuestras guías y encuentra el grabador láser perfecto para ti
+        </p>
+        <div class="flex justify-center gap-4">
+          <a
+            href="/categories"
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-primary-700 bg-white hover:bg-primary-50 transition-colors"
+          >
+            Explorar Grabadores
+          </a>
+          <a
+            href="/blog"
+            class="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-primary-700/50 transition-colors"
+          >
+            Leer Guías
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

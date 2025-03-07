@@ -1,0 +1,50 @@
+{
+  "authors": [
+    {
+      "id": "maria-garcia",
+      "name": "María García",
+      "slug": "maria-garcia",
+      "role": "Experta en Grabado Láser",
+      "bio": "Con más de 10 años de experiencia en la industria del grabado láser",
+      "avatar": "/images/authors/maria-garcia.jpg",
+      "social": {
+        "twitter": "@maria_laser",
+        "linkedin": "maria-garcia-laser"
+      },
+      "expertise": ["Grabado en madera", "Diseño 3D", "Corte láser"]
+    }
+  ],
+  "articles": [
+    {
+      "id": "guia-principiantes-2024",
+      "title": "Guía Completa de Grabado Láser para Principiantes 2024",
+      "slug": "guia-principiantes-2024",
+      "author": "maria-garcia",
+      "publishDate": "2024-01-15",
+      "updateDate": "2024-01-20",
+      "excerpt": "Todo lo que necesitas saber para empezar en el mundo del grabado láser",
+      "content": "El contenido completo del artículo iría aquí...",
+      "featuredImage": "/images/blog/guia-principiantes-2024.jpg",
+      "tags": ["principiantes", "guía", "tutorial"],
+      "categories": ["tutoriales", "guías"],
+      "readTime": 15,
+      "relatedArticles": ["comparativa-grabadores-2024", "mejores-materiales"]
+    }
+  ],
+  "categories": [
+    {
+      "id": "tutoriales",
+      "name": "Tutoriales",
+      "slug": "tutoriales",
+      "description": "Guías paso a paso para aprender grabado láser"
+    }
+  ],
+  "tags": [
+    {
+      "id": "principiantes",
+      "name": "Principiantes",
+      "slug": "principiantes",
+      "description": "Contenido ideal para quienes empiezan"
+    }
+  ]
+}

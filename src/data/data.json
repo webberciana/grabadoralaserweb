@@ -1,0 +1,155 @@
+{
+  "site": {
+    "title": "Mi Grabadora Láser",
+    "description": "Expert reviews and guides for laser engravers and cutters",
+    "baseUrl": "https://migrabadoralaser.es"
+  },
+  "categories": [
+    {
+      "id": "hobby",
+      "title": "Hobby",
+      "slug": "hobby",
+      "description": "Grabadores láser perfectos para aficionados y proyectos personales"
+    },
+    {
+      "id": "professional",
+      "title": "Professional",
+      "slug": "professional",
+      "description": "Grabadores láser de alto rendimiento para uso profesional"
+    },
+    {
+      "id": "industrial",
+      "title": "Industrial",
+      "slug": "industrial",
+      "description": "Grabadores láser industriales para producción a gran escala"
+    }
+  ],
+  "authors": [
+    {
+      "id": "john-doe",
+      "name": "John Doe",
+      "slug": "john-doe",
+      "bio": "Laser engraving expert with over 10 years of experience in the industry",
+      "avatar": "/images/authors/john-doe.jpg"
+    }
+  ],
+  "articles": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started with Laser Engraving",
+      "slug": "getting-started-laser-engraving",
+      "author": "john-doe",
+      "publishDate": "2024-01-15",
+      "excerpt": "Learn the basics of laser engraving and start your journey in this exciting craft",
+      "content": "Getting started with laser engraving can seem daunting at first, but with the right guidance, it's quite approachable...",
+      "tags": [
+        "beginners",
+        "tutorial"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "slug": "beginners",
+      "name": "Beginners",
+      "description": "Articles perfect for those just starting with laser engraving"
+    },
+    {
+      "slug": "tutorial",
+      "name": "Tutorial",
+      "description": "Step-by-step guides and tutorials for laser engraving techniques"
+    }
+  ],
+  "products": [
+    {
+      "id": "mecpow-x3-pro-10w",
+      "title": "Mecpow X3 Pro",
+      "slug": "mecpow-x3-pro-10w",
+      "categories": ["hobby"],
+      "brand": "ortur",
+      "publishDate": "2024-06-15",
+      "price": 299.99,
+      "discount": {
+        "percentage": 6.67
+      },
+      "rating": 4.3,
+      "shortDescription": "Grabador láser de 10W con asistencia de aire y múltiples medidas de seguridad para trabajos de precisión en metal y madera. Es ideal para principantes y para profesionales que se inician en el mundillo del grabado.",
+      "priceQuote":"El mejor grabador laser calidad-precio que puedes comprar a día de hoy",
+      "mainImage": "https://m.media-amazon.com/images/I/81P9Ulg76RL._AC_SL1500_.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/61lIS5c+8VL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81EYfh6DBbL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81mnC7mQQkL._AC_SL1500_.jpg"
+      ],
+      "videoReview": {
+        "title": "Mecpow X3 Pro 10W Review",
+        "youtubeId": "Hn40liAFlm0",
+        "description": "Análisis detallado del grabador láser Mecpow X3 Pro 10W y sus características de seguridad avanzadas."
+      },
+      "information": "El Mecpow X3 Pro es un grabador láser de 10W con asistencia de aire diseñado para ofrecer cortes y grabados precisos. Con una velocidad de 10000mm/min y un área de trabajo de 410x400mm, está equipado con medidas de seguridad avanzadas como detección de llama, giroscopio y parada de emergencia.",
+      "expertOpinion": {
+        "content": "Tras nuestras pruebas, el Mecpow X3 Pro destaca por su excelente rendimiento y múltiples características de seguridad, ideal para proyectos de grabado y corte en madera y metal.",
+        "rating": 8.0,
+        "pros": [
+          "Asistencia de aire efectiva",
+          "Medidas de seguridad avanzadas",
+          "Fácil montaje y configuración",
+          "Buena velocidad de corte"
+        ],
+        "cons": [
+          "La bomba de aire no es regulable",
+          "No incluye base de panal",
+          "Requiere enfoque manual"
+        ]
+      },
+      "reviewsAnalysis": "La mayoría de los usuarios destacan su buen funcionamiento, facilidad de uso y precio asequible. Algunos mencionan problemas con la bomba de aire, pero valoran su calidad de construcción.",
+      "reviews": [
+        {
+          "name": "Leonardo G.",
+          "rating": 5,
+          "content": "Excelente por su precio y rendimiento. 100% recomendable."
+        },
+        {
+          "name": "Victor A.",
+          "rating": 3,
+          "content": "La bomba de aire externa no funciona bien, pero el grabador en sí es correcto."
+        }
+      ],
+      "additionalInfo": "El Mecpow X3 Pro incluye una garantía de 1 año y acceso al soporte técnico del fabricante.",
+      "specifications": {
+        "power": "10W",
+        "area de trabajo": "410x400mm",
+        "accuracy": "0.01mm",
+        "software": [
+          "LaserGRBL",
+          "LightBurn"
+        ],
+        "connectivity": [
+          "Wi-Fi",
+          "USB",
+          "Tarjeta TF"
+        ],
+        "materials": [
+          "Madera",
+          "Metal",
+          "Acrílico",
+          "Cartón",
+          "Papel"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "¿Incluye medidas de seguridad?",
+          "answer": "Sí, cuenta con sensores de llama, giroscopio y parada de emergencia."
+        },
+        {
+          "question": "¿Qué software es compatible?",
+          "answer": "Es compatible con LaserGRBL y LightBurn."
+        }
+      ],
+      "affiliateUrl": "https://www.amazon.es/dp/B0CD1KMRGC/",
+      "lastUpdated": "2024-11-26T09:47:08.390Z",
+      "stock": "Disponible"
+    }
+  ]
+}
