@@ -1367,15 +1367,15 @@
       ]
     },
     {
-      "id": "airminti",
-      "name": "Airminti",
-      "slug": "airminti",
-      "logo": "/imagenes/airminti-logo.jpg",
+      "id": "airminty",
+      "name": "Airminty",
+      "slug": "airminty",
+      "logo": "/imagenes/airminty-logo.jpg",
       "publishDate": "2024-01-13",
-      "description": "Airminti ofrece una amplia variedad de productos prácticos y funcionales para el hogar, el automóvil y más.",
-      "alternativeDescription": "Descubre la versatilidad de Airminti, una marca de Amazon que proporciona soluciones prácticas para el día a día.",
-      "longDescription": "Airminti es una marca reconocida en Amazon que ofrece una extensa gama de productos diseñados para mejorar la organización, la seguridad y la comodidad en el hogar y el automóvil. Desde herramientas multiusos hasta accesorios de almacenamiento y protección, Airminti se destaca por su calidad accesible y facilidad de uso. Sus productos están diseñados para adaptarse a las necesidades cotidianas de los consumidores, brindando soluciones innovadoras con una excelente relación calidad-precio.",
-      "contentBrand": "Airminti es sinónimo de practicidad, versatilidad y accesibilidad, con una amplia gama de productos que facilitan la vida cotidiana.",
+      "description": "Airminty ofrece una amplia variedad de productos prácticos y funcionales para el hogar, el automóvil y más.",
+      "alternativeDescription": "Descubre la versatilidad de Airminty, una marca de Amazon que proporciona soluciones prácticas para el día a día.",
+      "longDescription": "Airminty es una marca reconocida en Amazon que ofrece una extensa gama de productos diseñados para mejorar la organización, la seguridad y la comodidad en el hogar y el automóvil. Desde herramientas multiusos hasta accesorios de almacenamiento y protección, Airminty se destaca por su calidad accesible y facilidad de uso. Sus productos están diseñados para adaptarse a las necesidades cotidianas de los consumidores, brindando soluciones innovadoras con una excelente relación calidad-precio.",
+      "contentBrand": "Airminty es sinónimo de practicidad, versatilidad y accesibilidad, con una amplia gama de productos que facilitan la vida cotidiana.",
       "features": [
         "Gran variedad de productos para el hogar, automóvil y organización",
         "Materiales de alta calidad con diseño funcional",
@@ -1383,9 +1383,9 @@
         "Excelente relación calidad-precio",
         "Respaldo y garantía de Amazon"
       ],
-      "website": "https://www.amazon.es/stores/Airminti/",
+      "website": "https://www.amazon.es/stores/Airminty/",
       "brandReviews": {
-        "summary": "Los clientes valoran positivamente la calidad y versatilidad de los productos de Airminti, destacando su facilidad de uso y diseño práctico, aunque algunos mencionan detalles menores de acabado.",
+        "summary": "Los clientes valoran positivamente la calidad y versatilidad de los productos de Airminty, destacando su facilidad de uso y diseño práctico, aunque algunos mencionan detalles menores de acabado.",
         "reviews": [
           {
             "name": "Llorenç",
@@ -1405,22 +1405,22 @@
         ]
       },
       "twoColumnSection": {
-        "title": "¿Por qué elegir Airminti?",
-        "content": "Airminti ofrece soluciones prácticas para el día a día con productos funcionales, accesibles y fáciles de usar.",
-        "image": "/imagenes/airminti-product.jpg",
-        "imageAlt": "Productos Airminti para el hogar y automóvil"
+        "title": "¿Por qué elegir Airminty?",
+        "content": "Airminty ofrece soluciones prácticas para el día a día con productos funcionales, accesibles y fáciles de usar.",
+        "image": "/imagenes/airminty-product.jpg",
+        "imageAlt": "Productos Airminty para el hogar y automóvil"
       },
       "faqs": [
         {
-          "question": "¿Son los productos Airminti fáciles de usar?",
+          "question": "¿Son los productos Airminty fáciles de usar?",
           "answer": "Sí, todos los productos están diseñados para ser intuitivos y de fácil instalación, con guías claras para su uso."
         },
         {
-          "question": "¿Los productos de Airminti tienen garantía?",
+          "question": "¿Los productos de Airminty tienen garantía?",
           "answer": "Sí, cuentan con la garantía de Amazon, lo que brinda confianza y respaldo en cada compra."
         },
         {
-          "question": "¿Airminti ofrece repuestos o accesorios adicionales?",
+          "question": "¿Airminty ofrece repuestos o accesorios adicionales?",
           "answer": "Algunos productos incluyen accesorios adicionales y estuches de almacenamiento, pero es recomendable verificar en cada artículo específico."
         }
       ]

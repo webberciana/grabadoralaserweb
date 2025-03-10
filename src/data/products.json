@@ -1803,7 +1803,7 @@
       "stock": "Consultar disponibilidad"
     },
     {
-      "id": "ffonland-dj6",
+      "id": "fonland-dj6",
       "title": "Fonland DJ6",
       "slug": "fonland-dj6",
       "categories": ["grabadoras-laser-para-vasos", "grabadoras-laser-para-principiantes", "grabadoras-laser-de-30w"],
@@ -4475,11 +4475,11 @@
       "stock": "Disponible"
     },
     {
-      "id": "airminti-grabador-de-pluma",
-      "title": "Airminti grabador de pluma",
-      "slug": "airminti-grabador-de-pluma",
+      "id": "airminty-grabador-de-pluma",
+      "title": "Airminty grabador de pluma",
+      "slug": "airminty-grabador-de-pluma",
       "categories": ["grabadoras-laser-para-principiantes", "grabadoras-laser-para-boligrafos"],
-      "brand": "airminti",
+      "brand": "airminty",
       "publishDate": "2023-07-13",
       "price": 25.49,
       "discount": {
