@@ -1,15 +1,15 @@
 {
-  "title": "Laser Engraver Guide",
-  "description": "Expert reviews and guides for laser engravers and cutters",
-  "baseUrl": "https://laserengraverguide.com",
+  "title": "Mi Grabadora Laser | La web para los amantes del grabado",
+  "description": "Descubre las mejores grabadoras laser.Guía experta de grabadores láser: comparativas, reviews y consejos para elegir el mejor grabador láser.",
+  "baseUrl": "https://migrabadoralaser.es",
   "social": {
-    "twitter": "laserengraverguide",
-    "facebook": "laserengraverguide",
-    "instagram": "laserengraverguide",
-    "youtube": "laserengraverguide"
+    "twitter": "migrabadoralaser",
+    "facebook": "migrabadoralaser",
+    "instagram": "migrabadoralaser",
+    "youtube": "migrabadoralaser"
   },
   "contact": {
-    "email": "info@laserengraverguide.com",
+    "email": "info@migrabadoralaser.es",
     "phone": "+34 900 000 000",
     "address": "Calle Principal 123, 28001 Madrid"
   }
