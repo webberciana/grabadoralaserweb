@@ -66,7 +66,7 @@ const relatedProducts = data.products
               </div>
               <span class="text-sm text-gray-600">{product.rating.toFixed(1)} rating</span>
               <time datetime={product.lastUpdated} class="text-sm text-gray-500">
-                Última actualización: {new Date(product.lastUpdated).toLocaleDateString()}
+                Actualizado: {new Date(product.lastUpdated).toLocaleDateString()}
               </time>
             </div>
 
@@ -74,7 +74,7 @@ const relatedProducts = data.products
 
             <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl mb-6">
               <div class="flex flex-col">
-                <span class="text-lg font-medium text-primary-600">Ver precio actual en Amazon</span>
+                <span class="text-lg font-medium text-primary-600">Comprobar disponibilidad</span>
               </div>
               <a
                 href={product.affiliateUrl}
@@ -82,7 +82,7 @@ const relatedProducts = data.products
                 rel="nofollow"
                 target="_blank"
               >
-                Ver en Amazon
+                Amazon
               </a>
             </div>
 
