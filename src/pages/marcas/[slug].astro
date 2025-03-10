@@ -6,8 +6,6 @@ import brands from '../../data/brands.json';
 
 export async function getStaticPaths() {
   const now = new Date();
-  console.log('Available brands:', brands.brands);
-  console.log('Available products:', data.products);
   
   const brandsWithProducts = brands.brands.filter(brand =>
     data.products.some(
@@ -17,8 +15,6 @@ export async function getStaticPaths() {
     )
   );
   
-  console.log('Brands with products:', brandsWithProducts);
-  
   return brandsWithProducts.map((brand) => ({
     params: { slug: brand.slug },
     props: { brand },
@@ -26,7 +22,6 @@ export async function getStaticPaths() {
 }
 
 const { brand } = Astro.props;
-console.log('Current brand:', brand);
 
 // Filter products by brand and publication date
 const now = new Date();
