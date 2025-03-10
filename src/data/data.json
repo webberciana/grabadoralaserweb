@@ -6,29 +6,29 @@
   },
   "categories": [
     {
-      "id": "hobby",
-      "title": "Hobby",
-      "slug": "hobby",
-      "description": "Grabadores láser perfectos para aficionados y proyectos personales"
+      "id": "cortadoras-laser",
+      "title": "Cortadoras laser",
+      "slug": "cortadoras-laser",
+      "description": "Cortadoras laser"
     },
     {
-      "id": "professional",
-      "title": "Professional",
-      "slug": "professional",
-      "description": "Grabadores láser de alto rendimiento para uso profesional"
+      "id": "grabadoras-laser-co2",
+      "title": "Grabadoras láser co2",
+      "slug": "grabadoras-laser-co2",
+      "description": "Grabadores láser de co2"
     },
     {
-      "id": "industrial",
-      "title": "Industrial",
-      "slug": "industrial",
+      "id": "mejores-grabadoras-laser",
+      "title": "Mejores grabadoras laser",
+      "slug": "mejores-grabadoras-laser",
       "description": "Grabadores láser industriales para producción a gran escala"
     }
   ],
   "authors": [
     {
-      "id": "john-doe",
+      "id": "maria-garcia",
       "name": "John Doe",
-      "slug": "john-doe",
+      "slug": "maria-garcia",
       "bio": "Laser engraving expert with over 10 years of experience in the industry",
       "avatar": "/images/authors/john-doe.jpg"
     }
