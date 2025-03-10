@@ -18,8 +18,16 @@ const publishedProducts = getPublishedProducts().slice(0, 9);
 const publishedArticles = getPublishedArticles(3);
 const brandsWithProductCount = getBrandsWithProductCount(3);
 
-// Get first 9 categories
-const categories = data.categories.slice(0, 9);
+// Get categories with published products
+const now = new Date();
+const categoriesWithProducts = data.categories
+  .filter(category =>
+    data.products.some(product => 
+      product.categories.includes(category.id) &&
+      new Date(product.publishDate) <= now
+    )
+  )
+  .slice(0, 9);
 
 // Process articles with author data
 const articlesWithAuthors = publishedArticles.map(article => {
@@ -178,7 +186,7 @@ const schema = {
         </p>
       </header>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {categories.map((category) => (
+        {categoriesWithProducts.map((category) => (
           <CategoryCard {...category} />
         ))}
       </div>
@@ -201,7 +209,7 @@ const schema = {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <header class="text-center mb-12">
         <h2 class="text-3xl font-extrabold text-gray-900">
-          Beneficios de las máquinas de grabado láser
+          Beneficios del Grabado Láser
         </h2>
         <p class="mt-4 text-xl text-gray-600">
           Descubre las ventajas de utilizar tecnología láser
@@ -210,8 +218,8 @@ const schema = {
       <div class="grid gap-8 md:grid-cols-2">
         <div class="bg-gray-50 rounded-2xl p-8">
           <img
-            src="/imagenes/grabadora-laser.jpg"
-            alt="Grabadora láser"
+            src="/images/precision-laser.jpg"
+            alt="Precisión en grabado láser"
             class="w-full h-48 object-cover rounded-xl mb-6"
           />
           <h3 class="text-xl font-bold text-gray-900 mb-4">Alta Precisión</h3>
@@ -221,8 +229,8 @@ const schema = {
         </div>
         <div class="bg-gray-50 rounded-2xl p-8">
           <img
-            src="/imagenes/grabador-laser.jpg"
-            alt="Grabador láser"
+            src="/images/versatility-laser.jpg"
+            alt="Versatilidad en grabado láser"
             class="w-full h-48 object-cover rounded-xl mb-6"
           />
           <h3 class="text-xl font-bold text-gray-900 mb-4">Versatilidad</h3>
@@ -239,7 +247,7 @@ const schema = {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <header class="text-center mb-12">
         <h2 class="text-3xl font-extrabold text-gray-900">
-          Artículos sobre grabado y corte laser
+          Últimos Artículos
         </h2>
         <p class="mt-4 text-xl text-gray-600">
           Mantente al día con las últimas tendencias y consejos en grabado láser
@@ -258,7 +266,7 @@ const schema = {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <header class="text-center mb-12">
         <h2 class="text-3xl font-extrabold text-gray-900">
-          Usos de las grabadoras láser
+          Áreas de Aplicación 🎨
         </h2>
         <p class="mt-4 text-xl text-gray-600">
           Explora las infinitas posibilidades del grabado láser

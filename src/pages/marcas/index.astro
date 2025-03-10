@@ -3,16 +3,23 @@ import Layout from '../../layouts/Layout.astro';
 import BrandCard from '../../components/BrandCard.astro';
 import data from '../../data';
 
-// Get product count for each brand
+// Get product count for each brand and filter brands with published products
 const now = new Date();
-const brandsWithProductCount = data.brands.map(brand => ({
-  ...brand,
-  productCount: data.products.filter(
-    product => 
-      product.brand === brand.id &&
+const brandsWithProductCount = data.brands
+  .filter(brand => 
+    data.products.some(product => 
+      product.brand === brand.id && 
       new Date(product.publishDate) <= now
-  ).length
-}));
+    )
+  )
+  .map(brand => ({
+    ...brand,
+    productCount: data.products.filter(
+      product => 
+        product.brand === brand.id &&
+        new Date(product.publishDate) <= now
+    ).length
+  }));
 ---
 
 <Layout
