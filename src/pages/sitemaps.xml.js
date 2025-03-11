@@ -10,7 +10,7 @@ export async function GET(context) {
   // Helper function to create URL entry
   const createUrlEntry = (loc, priority = "0.7", changefreq = "daily") => `
     <url>
-      <loc>${context.site.replace(/\/$/, '')}/${loc.replace(/^\//, '')}</loc>
+      <loc>${context.site}${loc.startsWith("/") ? loc : "/" + loc}</loc>
       <lastmod>${lastmod}</lastmod>
       <changefreq>${changefreq}</changefreq>
       <priority>${priority}</priority>
