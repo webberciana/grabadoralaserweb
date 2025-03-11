@@ -8,13 +8,19 @@ export async function GET(context) {
   const lastmod = now.toISOString();
 
   // Helper function to create URL entry
-  const createUrlEntry = (loc, priority = "0.7", changefreq = "daily") => `
-    <url>
-      <loc>${context.site.replace(/\/$/, '')}${loc}</loc>
-      <lastmod>${lastmod}</lastmod>
-      <changefreq>${changefreq}</changefreq>
-      <priority>${priority}</priority>
-    </url>`;
+  const createUrlEntry = (loc, priority = "0.7", changefreq = "daily") => {
+    const siteUrl = String(context.site).endsWith("/") 
+      ? String(context.site).slice(0, -1) 
+      : String(context.site);
+      
+    return `
+      <url>
+        <loc>${siteUrl}${loc}</loc>
+        <lastmod>${lastmod}</lastmod>
+        <changefreq>${changefreq}</changefreq>
+        <priority>${priority}</priority>
+      </url>`;
+  };
 
   // Get published products
   const publishedProducts = (productsData.products || []).filter(
