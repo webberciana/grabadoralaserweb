@@ -3,8 +3,10 @@ import { SEO } from 'astro-seo';
 import data from '../data/data.json';
 
 interface Props {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
+  seoTitle?: string;
+  seoDescription?: string;
   noindex?: boolean;
   type?: string;
   image?: string;
@@ -13,31 +15,40 @@ interface Props {
 
 const { 
   title, 
-  description, 
+  description,
+  seoTitle,
+  seoDescription, 
   noindex = false,
   type = 'website',
   image = '/og-image.jpg',
   article = false 
 } = Astro.props;
 
+// Use SEO title/description if provided, otherwise fallback to regular title/description
+const metaTitle = seoTitle || title || data.site.title;
+const metaDescription = seoDescription || description || data.site.description;
+
+// Construct the full page title
+const fullTitle = `${metaTitle} | ${data.site.title}`;
+
 const canonicalURL = new URL(Astro.url.pathname, data.site.baseUrl);
 ---
 
 <SEO
-  title={`${title} | ${data.site.title}`}
-  description={description}
+  title={fullTitle}
+  description={metaDescription}
   canonical={canonicalURL.toString()}
   noindex={noindex}
   nofollow={noindex}
   openGraph={{
     basic: {
-      title,
+      title: metaTitle,
       type,
       image,
       url: canonicalURL.toString(),
     },
     optional: {
-      description,
+      description: metaDescription,
       locale: 'es_ES',
       siteName: data.site.title,
     },
