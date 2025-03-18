@@ -1,0 +1,53 @@
+-Formular google sheet
+
+#Concatenar columnas
+
+
+
+=CONCATENAR(
+    "num:"&A2&","; 
+    "info:"&B2&","; 
+    "id:"&C2&","; 
+    "slug:"&D2&","; 
+    "modelo:"&E2&","; 
+    "mainImage:"&F2&","; 
+    "images:"&G2&","; 
+    "ASIN:"&H2&","; 
+    "Marca:"&I2&","; 
+    "importante:"&J2&","; 
+    "descripcion:"&K2&","; 
+    "contenido:"&L2&","; 
+    "dp:"&M2&","; 
+    "titulo amazon:"&N2&","; 
+    "descripcion amazon:"&O2&","; 
+    "url amazon:"&P2&","; 
+    "url pccomponentes:"&Q2&","; 
+    "url video 1:"&R2&","; 
+    "title video:"&S2&","; 
+    "descripcion video 1:"&T2&","; 
+    "related searches:"&U2&","; 
+    "related questions:"&V2&","; 
+    "Stock:"&W2&","; 
+    "Título:"&X2&","; 
+    "Precio (€):"&Y2&","; 
+    "Rating:"&Z2&","; 
+    "Número de Reseñas:"&AA2&","; 
+    "Reseñas:"&AB2&","; 
+    "Nombre del Producto:"&AC2&","; 
+    "Volumen de Ventas:"&AD2&","; 
+    "Bullet Points:"&AE2&","; 
+    "Detalles del Producto:"&AF2&","; 
+    "title uno:"&AG2&","; 
+    "title dos:"&AH2&","; 
+    "title tres:"&AI2&","; 
+    "title cuatro:"&AJ2&","; 
+    "title cinco:"&AK2&","; 
+    "description uno:"&AL2&","; 
+    "description dos:"&AM2&","; 
+    "description tres:"&AN2&","; 
+    "id youtube:"&AO2&","; 
+    "url video 1:"&AP2&","; 
+    "title video 1:"&AQ2&","; 
+    "descripcion video 1:"&AR2&","; 
+    "related questions:"&AS2
+)
