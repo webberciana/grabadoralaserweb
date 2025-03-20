@@ -4,27 +4,20 @@ import ProductCard from '../../components/ProductCard.astro';
 import data from '../../data';
 import brandsData from '../../data/brands.json';
 
-// Buscar la marca del producto
-const brand = brandsData.brands.find(b => b.id === product.brand);
-
-
-export async function getStaticPaths() {
-  const now = new Date();
-  const publishedProducts = data.products.filter(
-    product => new Date(product.publishDate) <= now
-  );
-  
-  return publishedProducts.map((product) => ({
-    params: { slug: product.slug },
-    props: { product },
-  }));
-}
-
+// Obtener `product` primero desde `Astro.props`
 const { product } = Astro.props;
+
+// Asegurar que `brandsData` es un array antes de buscar la marca
+const brands = Array.isArray(brandsData.brands) ? brandsData.brands : [];
+const brand = brands.find(b => b.id === product.brand);
+
+// Obtener categoría del producto
 const category = data.categories.find((c) => c.id === product.category);
+
+// Generar estrellas para la valoración del producto
 const stars = Array.from({ length: 5 }, (_, i) => i < Math.floor(product.rating));
 
-// Get related products
+// Obtener productos relacionados (publicados y de la misma categoría)
 const now = new Date();
 const relatedProducts = data.products
   .filter(
@@ -36,12 +29,25 @@ const relatedProducts = data.products
   .slice(0, 3);
 
 // Extraer el DP del enlace de Amazon
-const getDPFromAmazonUrl = (url: string) => {
+const getDPFromAmazonUrl = (url) => {
   const match = url.match(/\/([A-Z0-9]{10})(?:\/|\?|$)/);
   return match ? match[1] : '';
 };
 
 const dp = getDPFromAmazonUrl(product.affiliateUrl);
+
+// Función para obtener rutas estáticas
+export async function getStaticPaths() {
+  const now = new Date();
+  const publishedProducts = data.products.filter(
+    product => new Date(product.publishDate) <= now
+  );
+  
+  return publishedProducts.map((product) => ({
+    params: { slug: product.slug },
+    props: { product },
+  }));
+}
 ---
 
 <Layout title={product.title} description={product.shortDescription}>
