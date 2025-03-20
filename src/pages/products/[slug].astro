@@ -107,7 +107,7 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
     <div class="grid gap-8">
       <!-- Information Section -->
       <section class="bg-white rounded-2xl p-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Análisis del {product.title}</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Análisis del {product.h1}</h2>
         <div class="prose max-w-none text-gray-600" set:html={product.information} />
       </section>
 
@@ -119,7 +119,7 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
             <div class="aspect-w-1 aspect-h-1 bg-gray-50 rounded-xl overflow-hidden">
               <img
                 src={product.mainImage}
-                alt={product.title}
+                alt={product.h1}
                 class="w-full h-full object-contain"
               />
             </div>
@@ -128,7 +128,7 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
           <!-- Product Info -->
           <div class="md:col-span-2 text-center md:text-left">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">
-              ¿Te interesa el {product.title}?
+              ¿Te interesa el {product.h1}?
             </h2>
             <p class="text-lg text-gray-600 mb-6">
               {product.priceQuote}
@@ -149,9 +149,9 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
 
       <!-- Expert Opinion Section -->
       <section class="bg-white rounded-2xl p-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Nuestra opinión sobre el {product.title}</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Nuestra opinión sobre el {product.h1}</h2>
         <div class="prose max-w-none mb-8 text-gray-600" set:html={product.expertOpinion.content} />
-        <h3 class="text-2xl font-bold text-gray-900 mb-6">Pros y contras del  {product.title}</h3>
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Pros y contras del  {product.h1}</h3>
         <div class="grid md:grid-cols-2 gap-8 mb-8">
           <div class="bg-green-50 rounded-xl p-6">
             <h3 class="text-lg font-semibold text-green-700 mb-4">Ventajas</h3>
@@ -189,7 +189,7 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
 
       <!-- Reviews Section -->
       <section class="bg-white rounded-2xl p-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-4">Las mejores reviews sobre {product.title}</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Las mejores reviews sobre {product.h1}</h2>
         {product.reviewsAnalysis && (
           <p class="text-gray-600 mb-6">{product.reviewsAnalysis}</p>
         )}
@@ -218,13 +218,13 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
 
       <!-- Product Images Section -->
       <section class="bg-white rounded-2xl p-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Imágenes del {product.title}</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Imágenes del {product.h1}</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           {product.images.map((image) => (
             <figure class="aspect-w-4 aspect-h-3 bg-gray-50 rounded-xl overflow-hidden">
               <img
                 src={image}
-                alt={`${product.title} en detalle`}
+                alt={`${product.h1} en detalle`}
                 class="w-full h-full object-cover"
               />
             </figure>
@@ -235,7 +235,7 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
       <!-- Video Review Section -->
       {product.videoReview && (
         <section class="bg-white rounded-2xl p-8">
-          <h2 class="text-2xl font-bold text-gray-900 mb-4">Video Review del {product.title}</h2>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Video Review del {product.h1}</h2>
           {product.videoReview.description && (
             <p class="text-gray-600 mb-6">{product.videoReview.description}</p>
           )}
@@ -253,7 +253,7 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
 
       <!-- Additional Info Section -->
       <section class="bg-white rounded-2xl p-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Información adicional sobre {product.title}</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Información adicional sobre el {product.h1}</h2>
         <div class="prose max-w-none text-gray-600 mb-8" set:html={product.additionalInfo} />
 
         <h3 class="text-xl font-bold text-gray-900 mb-4">Especificaciones técnicas</h3>
@@ -270,7 +270,7 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
         </dl>
 
         <div class="mt-8 space-y-4">
-          <h3 class="text-xl font-bold text-gray-900 mb-4">Preguntas frecuentes sobre {product.title}</h3>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Preguntas frecuentes sobre el {product.h1}</h3>
           {product.faqs.map((faq, index) => (
             <details class="group bg-gray-50 rounded-xl" {...index === 0 && { open: true }}>
               <summary class="flex justify-between items-center cursor-pointer p-6">
