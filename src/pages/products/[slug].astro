@@ -5,7 +5,7 @@ import data from '../../data';
 import brandsData from '../../data/brands.json';
 
 // Buscar la marca del producto
-const brand = brandsData.find(b => b.id === product.brand);
+const brand = brandsData.brands.find(b => b.id === product.brand);
 
 
 export async function getStaticPaths() {
