@@ -28,15 +28,15 @@ const allTags = [...new Set(publishedArticles.flatMap(article => article.tags))]
 ---
 
 <Layout
-  title="Blog"
-  description="Latest articles and guides about laser engraving and cutting"
+  title="Noticias sobre grabadoras laser"
+  description="Descubre las ultimas noticias y novedades sobre grabadoras y cortadoras laser"
 >
   <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
     <!-- Blog Header -->
     <div class="text-center mb-12">
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Latest Articles</h1>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Últimas noticias sobre grabadoras laser</h1>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        Stay up to date with the latest trends, tips, and tutorials in laser engraving
+        Descubre las ultimas noticias y novedades sobre grabadoras y cortadoras laser
       </p>
     </div>
 
@@ -53,7 +53,7 @@ const allTags = [...new Set(publishedArticles.flatMap(article => article.tags))]
       <!-- Sidebar -->
       <div class="lg:col-span-1">
         <div class="bg-white rounded-2xl shadow-lg p-6 sticky top-24">
-          <h2 class="text-xl font-bold text-gray-900 mb-4">Popular Tags</h2>
+          <h2 class="text-xl font-bold text-gray-900 mb-4">Tags populares</h2>
           <TagCloud tags={allTags} />
         </div>
       </div>
