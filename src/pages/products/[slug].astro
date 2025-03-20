@@ -2,6 +2,11 @@
 import Layout from '../../layouts/Layout.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import data from '../../data';
+import brandsData from '../../data/brands.json';
+
+// Buscar la marca del producto
+const brand = brandsData.find(b => b.id === product.brand);
+
 
 export async function getStaticPaths() {
   const now = new Date();
@@ -93,7 +98,6 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
                 Amazon
               </a>
             </div>
-
             {brand && (
               <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl mb-6">
                 <img
@@ -112,7 +116,6 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
                 </div>
               </div>
             )}
-
           </header>
         </div>
       </div>
