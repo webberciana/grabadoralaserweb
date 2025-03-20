@@ -4,7 +4,7 @@ import ProductCard from '../../components/ProductCard.astro';
 import data from '../../data';
 import brandsData from '../../data/brands.json';
 
-// Obtener `product` primero desde `Astro.props`
+// Obtener `product` desde `Astro.props`
 const { product } = Astro.props;
 
 // Asegurar que `brandsData` es un array antes de buscar la marca
@@ -35,6 +35,12 @@ const getDPFromAmazonUrl = (url) => {
 };
 
 const dp = getDPFromAmazonUrl(product.affiliateUrl);
+
+// Obtener las primeras tres categorías únicas del producto
+const firstThreeCategories = product.categories
+  .map((categoryId) => data.categories.find((c) => c.id === categoryId))
+  .filter(Boolean) // Eliminar valores `undefined`
+  .slice(0, 3);
 
 // Función para obtener rutas estáticas
 export async function getStaticPaths() {
@@ -318,6 +324,7 @@ export async function getStaticPaths() {
           ))}
         </div>
       </section>
+
 
 
       <!-- Categories Section -->
