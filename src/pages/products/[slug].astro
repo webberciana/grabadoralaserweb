@@ -94,11 +94,25 @@ const dp = getDPFromAmazonUrl(product.affiliateUrl);
               </a>
             </div>
 
-            {product.priceQuote && (
-              <blockquote class="border-l-4 border-primary-200 pl-4 italic text-gray-600">
-                {product.priceQuote}
-              </blockquote>
-            )}
+            {brand && (
+              <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl mb-6">
+                <img
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  class="w-16 h-16 object-contain"
+                  style="border-radius:50%"
+                />
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900">
+                    <a href={`/brands/${brand.slug}`} class="hover:text-primary-600 transition-colors">
+                      {brand.name}
+                    </a>
+                  </h3>
+                  <p class="text-sm text-gray-600">Fabricante</p>
+                </div>
+              </div>
+            )
+
           </header>
         </div>
       </div>
