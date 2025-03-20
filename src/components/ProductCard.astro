@@ -1,6 +1,7 @@
 ---
 interface Props {
   title: string;
+  h1: string;
   slug: string;
   price: number;
   discount?: {
@@ -11,7 +12,7 @@ interface Props {
   affiliateUrl: string;
 }
 
-const { title, slug, rating, shortDescription, affiliateUrl } = Astro.props;
+const { title, h1, slug, rating, shortDescription, affiliateUrl } = Astro.props;
 
 const stars = Array.from({ length: 5 }, (_, i) => i < Math.floor(rating));
 
@@ -28,7 +29,7 @@ const dp = getDPFromAmazonUrl(affiliateUrl);
   <figure class="aspect-w-16 aspect-h-9 bg-gray-100 relative">
     <img
       src={`/imagenes/${slug}.jpg`}
-      alt={title}
+      alt={h1}
       class="w-full h-full object-cover object-center"
     />
   </figure>
@@ -53,7 +54,7 @@ const dp = getDPFromAmazonUrl(affiliateUrl);
 
       <h2 class="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors line-clamp-2 mt-2">
         <a href={`/products/${slug}`} class="focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg">
-          {title}
+          {h1}
         </a>
       </h2>
     </header>
