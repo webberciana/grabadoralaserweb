@@ -54,7 +54,7 @@ const ratings = [...new Set(products.map(product => Math.floor(product.rating ||
 
           <!-- Filtro de Marcas -->
           <div class="mb-6">
-            <details class="group" open={!Astro.request.url.includes('mobile')}>
+            <details class="group">
               <summary class="flex justify-between items-center cursor-pointer mb-2">
                 <h3 class="text-sm font-medium text-gray-700">Marcas</h3>
                 <svg
@@ -82,7 +82,7 @@ const ratings = [...new Set(products.map(product => Math.floor(product.rating ||
 
           <!-- Filtro de Categorías -->
           <div class="mb-6">
-            <details class="group" open={!Astro.request.url.includes('mobile')}>
+            <details class="group">
               <summary class="flex justify-between items-center cursor-pointer mb-2">
                 <h3 class="text-sm font-medium text-gray-700">Categorías</h3>
                 <svg
@@ -110,7 +110,7 @@ const ratings = [...new Set(products.map(product => Math.floor(product.rating ||
 
           <!-- Filtro de Valoraciones -->
           <div class="mb-6">
-            <details class="group" open={!Astro.request.url.includes('mobile')}>
+            <details class="group">
               <summary class="flex justify-between items-center cursor-pointer mb-2">
                 <h3 class="text-sm font-medium text-gray-700">Valoración</h3>
                 <svg
