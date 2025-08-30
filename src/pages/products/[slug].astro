@@ -17,29 +17,55 @@ const category = data.categories.find((c) => c.id === product.category);
 // Generar estrellas para la valoración del producto
 const stars = Array.from({ length: 5 }, (_, i) => i < Math.floor(product.rating));
 
-// Obtener productos relacionados (publicados y de la misma categoría)
+// Obtener productos relacionados (publicados y con categorías en común)
 const now = new Date();
-const relatedProducts = data.products
-  .filter(
-    (p) =>
-      p.slug !== product.slug &&
-      p.category === product.category &&
-      new Date(p.publishDate) <= now
-  )
-  .slice(0, 3);
 
-// Extraer el DP del enlace de Amazon
-const getDPFromAmazonUrl = (url) => {
-  const match = url.match(/\/([A-Z0-9]{10})(?:\/|\?|$)/);
-  return match ? match[1] : '';
+// Normaliza a array las categorías del producto actual
+const currentCats = new Set(
+  Array.isArray(product.categories)
+    ? product.categories
+    : product.category
+      ? [product.category]
+      : []
+);
+
+// Función para contar intersección de categorías entre dos productos
+const sharedCount = (p) => {
+  const cats = Array.isArray(p.categories)
+    ? p.categories
+    : p.category
+      ? [p.category]
+      : [];
+  return cats.reduce((acc, c) => acc + (currentCats.has(c) ? 1 : 0), 0);
 };
 
-const dp = getDPFromAmazonUrl(product.affiliateUrl);
+const relatedProducts = data.products
+  .filter((p) => {
+    if (p.slug === product.slug) return false;
+    const published = new Date(p.publishDate) <= now;
 
-// Obtener las primeras tres categorías únicas del producto
-const firstThreeCategories = product.categories
-  .map((categoryId) => data.categories.find((c) => c.id === categoryId))
-  .filter(Boolean) // Eliminar valores `undefined`
+    // categorías del candidato (normalizadas a array)
+    const cats = Array.isArray(p.categories)
+      ? p.categories
+      : p.category
+        ? [p.category]
+        : [];
+
+    const overlaps = cats.some((c) => currentCats.has(c));
+    return published && overlaps;
+  })
+  .sort((a, b) => {
+    // 1) más categorías compartidas
+    const diffShared = sharedCount(b) - sharedCount(a);
+    if (diffShared !== 0) return diffShared;
+
+    // 2) mejor rating
+    const diffRating = (b.rating ?? 0) - (a.rating ?? 0);
+    if (diffRating !== 0) return diffRating;
+
+    // 3) más reciente
+    return new Date(b.publishDate) - new Date(a.publishDate);
+  })
   .slice(0, 3);
 
 // Función para obtener rutas estáticas
