@@ -12,7 +12,7 @@ const sortedTags = [...tags].sort();
 <div class="flex flex-wrap gap-2">
   {sortedTags.map((tag) => (
     <a
-      href={`/blog/tags/${tag}`}
+      href={`/blog/tags/${tag}/`}
       class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-50 text-primary-700 hover:bg-primary-100 transition-colors"
     >
       #{tag}
