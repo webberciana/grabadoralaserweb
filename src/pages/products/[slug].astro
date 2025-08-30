@@ -17,10 +17,10 @@ const category = data.categories.find((c) => c.id === product.category);
 // Generar estrellas para la valoración del producto
 const stars = Array.from({ length: 5 }, (_, i) => i < Math.floor(product.rating));
 
-// Obtener productos relacionados (publicados y con categorías en común)
+// Obtener productos relacionados (publicados y de la misma categoría)
+// Mantiene compatibilidad con productos antiguos (category:string) y nuevos (categories:string[])
 const now = new Date();
 
-// Normaliza a array las categorías del producto actual
 const currentCats = new Set(
   Array.isArray(product.categories)
     ? product.categories
@@ -29,29 +29,21 @@ const currentCats = new Set(
       : []
 );
 
-// Función para contar intersección de categorías entre dos productos
-const sharedCount = (p) => {
-  const cats = Array.isArray(p.categories)
+const getCats = (p) =>
+  Array.isArray(p.categories)
     ? p.categories
     : p.category
       ? [p.category]
       : [];
-  return cats.reduce((acc, c) => acc + (currentCats.has(c) ? 1 : 0), 0);
-};
+
+// cuenta categorías compartidas
+const sharedCount = (p) => getCats(p).reduce((acc, c) => acc + (currentCats.has(c) ? 1 : 0), 0);
 
 const relatedProducts = data.products
   .filter((p) => {
     if (p.slug === product.slug) return false;
     const published = new Date(p.publishDate) <= now;
-
-    // categorías del candidato (normalizadas a array)
-    const cats = Array.isArray(p.categories)
-      ? p.categories
-      : p.category
-        ? [p.category]
-        : [];
-
-    const overlaps = cats.some((c) => currentCats.has(c));
+    const overlaps = getCats(p).some((c) => currentCats.has(c));
     return published && overlaps;
   })
   .sort((a, b) => {
@@ -66,6 +58,20 @@ const relatedProducts = data.products
     // 3) más reciente
     return new Date(b.publishDate) - new Date(a.publishDate);
   })
+  .slice(0, 3);
+
+// Extraer el DP del enlace de Amazon
+const getDPFromAmazonUrl = (url) => {
+  const match = url.match(/\/([A-Z0-9]{10})(?:\/|\?|$)/);
+  return match ? match[1] : '';
+};
+
+const dp = getDPFromAmazonUrl(product.affiliateUrl);
+
+// Obtener las primeras tres categorías únicas del producto
+const firstThreeCategories = product.categories
+  .map((categoryId) => data.categories.find((c) => c.id === categoryId))
+  .filter(Boolean) // Eliminar valores `undefined`
   .slice(0, 3);
 
 // Función para obtener rutas estáticas
