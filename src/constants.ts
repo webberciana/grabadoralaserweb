@@ -1,1 +1,0 @@
-export const AFFILIATE_TAG = 'tx306-21';

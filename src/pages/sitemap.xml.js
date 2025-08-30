@@ -1,7 +1,4 @@
-import productsData from '../data/products.json';
-import articlesData from '../data/blog.json';
-import brandsData from '../data/brands.json';
-import categoriesData from '../data/categories.json';
+import data from '../data';
 
 export async function GET(context) {
   const now = new Date();
@@ -23,27 +20,27 @@ export async function GET(context) {
   };
 
   // Get published products
-  const publishedProducts = (productsData.products || []).filter(
+  const publishedProducts = (data.products || []).filter(
     product => new Date(product.publishDate) <= now
   );
 
   // Get published articles
-  const publishedArticles = (articlesData.articles || []).filter(
+  const publishedArticles = (data.blog.articles || []).filter(
     article => new Date(article.publishDate) <= now
   );
 
   // Get brands with published products
-  const brandsWithProducts = (brandsData.brands || []).filter(brand =>
+  const brandsWithProducts = (data.brands || []).filter(brand =>
     publishedProducts.some(product => product.brand === brand.id)
   );
 
   // Get categories with published products
-  const categoriesWithProducts = (categoriesData.categories || []).filter(category =>
+  const categoriesWithProducts = (data.categories || []).filter(category =>
     publishedProducts.some(product => product.categories.includes(category.id))
   );
 
   // Get authors with published articles
-  const authorsWithArticles = (articlesData.authors || []).filter(author =>
+  const authorsWithArticles = (data.blog.authors || []).filter(author =>
     publishedArticles.some(article => article.author === author.id)
   );
 

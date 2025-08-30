@@ -2,14 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import data from '../../data';
-import brandsData from '../../data/brands.json';
 
 // Obtener `product` desde `Astro.props`
 const { product } = Astro.props;
 
-// Asegurar que `brandsData` es un array antes de buscar la marca
-const brands = Array.isArray(brandsData.brands) ? brandsData.brands : [];
-const brand = brands.find(b => b.id === product.brand);
+// Buscar la marca del producto
+const brand = data.brands.find(b => b.id === product.brand);
 
 // Obtener categoría del producto
 const category = data.categories.find((c) => c.id === product.category);
@@ -59,14 +57,6 @@ const relatedProducts = data.products
     return new Date(b.publishDate) - new Date(a.publishDate);
   })
   .slice(0, 3);
-
-// Extraer el DP del enlace de Amazon
-const getDPFromAmazonUrl = (url) => {
-  const match = url.match(/\/([A-Z0-9]{10})(?:\/|\?|$)/);
-  return match ? match[1] : '';
-};
-
-const dp = getDPFromAmazonUrl(product.affiliateUrl);
 
 // Obtener las primeras tres categorías únicas del producto
 const firstThreeCategories = product.categories
@@ -135,7 +125,7 @@ export async function getStaticPaths() {
                 <span class="text-lg font-medium text-primary-600">Consultar disponibilidad</span>
               </div>
               <a
-                href={`https://www.amazon.es/dp/${dp}?tag=andamiosyescaleras-21`}
+                href={product.affiliateUrl}
                 class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-primary-600 rounded-xl hover:bg-primary-700 transition-colors"
                 rel="nofollow"
                 target="_blank"
@@ -197,7 +187,7 @@ export async function getStaticPaths() {
               {product.priceQuote}
             </p>
             <a
-              href={`https://www.amazon.es/dp/${dp}?tag=andamiosyescaleras-21`}
+              href={product.affiliateUrl}
               class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-primary-600 rounded-full hover:bg-primary-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
               rel="nofollow"
               target="_blank"
